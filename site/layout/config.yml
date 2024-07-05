@@ -5,6 +5,7 @@ navbar:
   - gallery: /gallery.html
   - members: /collections/members.html
   - about: /about.html
+  - homebrew: https://hsp-ecc.xyz
 baseURL: https://anirudhsudhir.github.io/test-hsp/
 siteTitle: "HSP"
 siteScripts: ["hamburger.js"]
