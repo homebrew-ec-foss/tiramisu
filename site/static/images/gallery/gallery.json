@@ -10,5 +10,30 @@
         "/static/images/gallery/foss_talk/sanchayan_maity.jpeg",
         "/static/images/gallery/foss_talk/tushar_sadhwani.jpeg",
         "/static/images/gallery/foss_talk/shreesh_kulkarni.JPG"
+    ],
+
+    "Buzzing with eBPF":[
+        "/static/images/gallery/eBPF/eBPF_1.HEIC",
+        "/static/images/gallery/eBPF/eBPF_2.JPG",
+        "/static/images/gallery/eBPF/eBPF_3.JPG",
+        "/static/images/gallery/eBPF/eBPF_4.JPG",
+        "/static/images/gallery/eBPF/eBPF_5.JPG",
+        "/static/images/gallery/eBPF/eBPF_6.JPG",
+        "/static/images/gallery/eBPF/eBPF_7.HEIC"
+    ],
+
+    "Database Storage Systems 101":[
+        "/static/images/gallery/DB/DB_1.JPG",
+        "/static/images/gallery/DB/DB_2.jpg",
+        "/static/images/gallery/DB/DB_3.JPG",
+        "/static/images/gallery/DB/DB_4.HEIC",
+        "/static/images/gallery/DB/DB_5.JPG",
+        "/static/images/gallery/DB/DB_6.JPG",
+        "/static/images/gallery/DB/DB_7.JPG",
+        "/static/images/gallery/DB/DB_8.JPG"
+    ],
+
+    "Docker Undocked":[
+        
     ]
 }
