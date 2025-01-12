@@ -34,6 +34,33 @@
     ],
 
     "Docker Undocked":[
-        
+        "/static/images/gallery/docker_undocked/doc_1.jpeg",
+        "/static/images/gallery/docker_undocked/doc_2.jpeg",
+        "/static/images/gallery/docker_undocked/doc_3.jpg",
+        "/static/images/gallery/docker_undocked/doc_4.jpeg",
+        "/static/images/gallery/docker_undocked/doc_5.jpeg"
+    ],
+
+    "Project Expo":[
+        "/static/images/gallery/project_expo/pro_expo_1.HEIC",
+        "/static/images/gallery/project_expo/pro_expo_2.jpg",
+        "/static/images/gallery/project_expo/pro_expo_3.HEIC",
+        "/static/images/gallery/project_expo/pro_expo_4.HEIC",
+        "/static/images/gallery/project_expo/pro_expo_5.jpg",
+        "/static/images/gallery/project_expo/pro_expo_6.HEIC",
+        "/static/images/gallery/project_expo/pro_expo_7.jpg",
+        "/static/images/gallery/project_expo/pro_expo_8.HEIC"
+    ],
+
+    "Fireside":[
+        "/static/images/gallery/fireside/fireside_1.JPG",
+        "/static/images/gallery/fireside/fireside_2.jpeg",
+        "/static/images/gallery/fireside/fireside_3.HEIC",
+        "/static/images/gallery/fireside/fireside_4.JPG",
+        "/static/images/gallery/fireside/fireside_5.jpg",
+        "/static/images/gallery/fireside/fireside_6.HEIC",
+        "/static/images/gallery/fireside/fireside_7.HEIC",
+        "/static/images/gallery/fireside/fireside_8.jpg"
+
     ]
 }
