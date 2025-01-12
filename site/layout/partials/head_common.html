@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{$PageData.Frontmatter.Title}}</title>
+
 
     <link rel="preload stylesheet" href="{{.DeepDataMerge.LayoutConfig.ThemeURL}}" as="style" />
     <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
@@ -37,7 +37,7 @@
     {{end}}
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ $PageData.Frontmatter.Title }}" />
+
     <meta property="og:description" content="{{ $PageData.Frontmatter.Description }}" />
     <meta property="og:image" content="{{ $PageData.Frontmatter.PreviewImage }}" />
 
