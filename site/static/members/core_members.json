@@ -66,11 +66,11 @@
   },
   "Sriprad": {
     "position": "Mentor Lead",
-    "image": "https://api.dicebear.com/9.x/glass/svg/",
+    "image": "/static/images/members/SripradPotukuchi.jpg",
     "links": {
-      "Github": "https://github.com/",
-      "Linkedin": "https://linkedin.com/in",
-      "Instagram": "https://instagram.com"
+      "Github": "https://github.com/procub3r",
+      "Linkedin": "https://in.linkedin.com/in/sriprad-potukuchi-b570a728b",
+      "X": "https://x.com/procub3r"
     }
   }
 }

@@ -10,5 +10,57 @@
         "/static/images/gallery/foss_talk/sanchayan_maity.jpeg",
         "/static/images/gallery/foss_talk/tushar_sadhwani.jpeg",
         "/static/images/gallery/foss_talk/shreesh_kulkarni.JPG"
+    ],
+
+    "Buzzing with eBPF":[
+        "/static/images/gallery/eBPF/eBPF_1.jpg",
+        "/static/images/gallery/eBPF/eBPF_2.JPG",
+        "/static/images/gallery/eBPF/eBPF_3.JPG",
+        "/static/images/gallery/eBPF/eBPF_4.JPG",
+        "/static/images/gallery/eBPF/eBPF_5.JPG",
+        "/static/images/gallery/eBPF/eBPF_6.JPG",
+        "/static/images/gallery/eBPF/eBPF_7.jpg"
+    ],
+
+    "Database Storage Systems 101":[
+        "/static/images/gallery/DB/DB_1.JPG",
+        "/static/images/gallery/DB/DB_2.jpg",
+        "/static/images/gallery/DB/DB_3.JPG",
+        "/static/images/gallery/DB/DB_4.jpg",
+        "/static/images/gallery/DB/DB_5.JPG",
+        "/static/images/gallery/DB/DB_6.JPG",
+        "/static/images/gallery/DB/DB_7.JPG",
+        "/static/images/gallery/DB/DB_8.JPG"
+    ],
+
+    "Docker Undocked":[
+        "/static/images/gallery/docker_undocked/doc_1.jpeg",
+        "/static/images/gallery/docker_undocked/doc_2.jpeg",
+        "/static/images/gallery/docker_undocked/doc_3.jpg",
+        "/static/images/gallery/docker_undocked/doc_4.jpeg",
+        "/static/images/gallery/docker_undocked/doc_5.jpeg"
+    ],
+
+    "Project Expo":[
+        "/static/images/gallery/project_expo/pro_expo_1.jpg",
+        "/static/images/gallery/project_expo/pro_expo_2.jpg",
+        "/static/images/gallery/project_expo/pro_expo_3.jpg",
+        "/static/images/gallery/project_expo/pro_expo_4.jpg",
+        "/static/images/gallery/project_expo/pro_expo_5.jpg",
+        "/static/images/gallery/project_expo/pro_expo_6.jpg",
+        "/static/images/gallery/project_expo/pro_expo_7.jpg",
+        "/static/images/gallery/project_expo/pro_expo_8.jpg"
+    ],
+
+    "Fireside":[
+        "/static/images/gallery/fireside/fireside_1.JPG",
+        "/static/images/gallery/fireside/fireside_2.jpeg",
+        "/static/images/gallery/fireside/fireside_3.jpg",
+        "/static/images/gallery/fireside/fireside_4.JPG",
+        "/static/images/gallery/fireside/fireside_5.jpg",
+        "/static/images/gallery/fireside/fireside_6.jpg",
+        "/static/images/gallery/fireside/fireside_7.jpg",
+        "/static/images/gallery/fireside/fireside_8.jpg"
+
     ]
 }
