@@ -8,5 +8,5 @@ customFields:
     - Linkedin: https://www.linkedin.com/in/suhas-jaladi-112b602b3/
     - Github: https://github.com/codespiderr
     - Instagram: https://www.instagram.com/suhas._.71/
-    - FireBeakLogo: https://firebeak.netlify.app/
+    - Link: https://firebeak.netlify.app/
 ---
