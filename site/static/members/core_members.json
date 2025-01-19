@@ -48,11 +48,10 @@
   },
   "Adhvaith": {
     "position": "Marketing Lead",
-    "image": "https://api.dicebear.com/9.x/glass/svg/",
+    "image": "/static/images/members/AdhvaithRajesh.jpeg",
     "links": {
-      "Github": "https://github.com/",
-      "Linkedin": "https://linkedin.com/in",
-      "Instagram": "https://instagram.com"
+      "Github": "https://github.com/AdhvaithRajesh",
+      "Linkedin": "https://www.linkedin.com/in/adhvaith-rajesh-30905126a/"
     }
   },
   "Rithvik": {
