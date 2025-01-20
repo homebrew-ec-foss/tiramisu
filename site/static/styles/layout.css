@@ -153,9 +153,34 @@ nav {
     }
 }
 
-.featured-post {
+.featured-card {
+    background-color: var(--color-background-dim);
+    border-radius: 8px;
+    /* padding-inline: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-color: blue;
-    border-width: 50px;
+
+    text-decoration: none;
+
+    display: inline-block;
+    /* width: 100%; */
+    width: 100%;
+
+    & > * {
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 400;
+        color: var(--color-text);
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    & > h2 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
 }
 
 @media screen and (max-width: 650px) {

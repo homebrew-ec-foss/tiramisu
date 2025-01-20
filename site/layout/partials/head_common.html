@@ -37,7 +37,7 @@
     {{end}}
 
     <meta property="og:type" content="website" />
-
+    <meta property="og:title" content="{{ $PageData.Frontmatter.Title }}" />
     <meta property="og:description" content="{{ $PageData.Frontmatter.Description }}" />
     <meta property="og:image" content="{{ $PageData.Frontmatter.PreviewImage }}" />
 
@@ -45,6 +45,5 @@
 
     <script defer>
         hljs.highlightAll();
-        // hljs.addPlugin(new CopyButtonPlugin());
     </script>
     {{end}}

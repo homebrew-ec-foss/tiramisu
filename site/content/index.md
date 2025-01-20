@@ -34,13 +34,15 @@ The club was started in 2021, with a founding team of five people. Presently, th
 
 <div class="home-featured">
 
-<a class="events-card" href="/events/fosstalks-2.html">
-        <h2 class="event-card-title"></h2>
-        <p class="event-card-date"></p>
-        <p class="event-card-desc"></p>
+<a class="featured-card" href="/events/fosstalks-2.html">
+  <img class="featured-card-image" loading="lazy" src="" />
+  <h2 class="featured-card-title"></h2>
+  <p class="featured-card-date"></p>
+  <p class="featured-card-desc"></p>
 </a>
 
 
+<!-- For Youtube Videos, please wrap the ifram around a div with the calss name video-container-->
 <div class="video-container">
 <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube-nocookie.com/embed/raQrUlURXEc" frameborder="0"></iframe>
 </div>
