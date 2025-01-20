@@ -1,6 +1,7 @@
 ---
 title: home
 layout: page
+scripts: [featured_post.js]
 ---
 
 <h1 style="margin-top: 0.4rem; font-family: Inter; font-size: 3.2rem; font-weight: 700;">HSP PESUECC</h1>
@@ -23,10 +24,36 @@ The club was started in 2021, with a founding team of five people. Presently, th
 
 ## Featured
 
-<div class="home-featured" style="margin: 30px 0; padding: 0; width: 100%; height: auto;">
+<!-- <div class="home-featured" style="margin: 30px 0; padding: 0; width: 100%; height: auto;">
   <iframe 
     src="/collections/featured.html" 
     class="featured-iframe" 
     style="width: 100%; height: 100%; border: none; overflow-x: auto; overflow-y: hidden; scroll-behavior: smooth;">
   </iframe>
+</div> -->
+
+<div class="home-featured">
+
+<a class="events-card" href="/events/fosstalks-2.html">
+        <h2 class="event-card-title"></h2>
+        <p class="event-card-date"></p>
+        <p class="event-card-desc"></p>
+</a>
+
+
+<div class="video-container">
+<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube-nocookie.com/embed/raQrUlURXEc" frameborder="0"></iframe>
+</div>
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">&mdash; Theo - t3.gg (@t3dotgg) <a href="https://twitter.com/t3dotgg/status/1825040969156427794?ref_src=twsrc%5Etfw">August 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IHtVWGhG0Xg?si=0JTx09OIDe5Umpnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<!-- <blockquote class="twitter-tweet"><p lang="en" dir="ltr">fully in-memory join + streaming (select + filter + distinct + select-with-pushdown) iterators ✅<br>(join is not really an iterator at this point)<br>the next step is to make the Row struct completely JSON-based so I can implement projection, and add some form of page-based storage <a href="https://t.co/t8KZwjQBrL">pic.twitter.com/t8KZwjQBrL</a></p>&mdash; Anirudh Rowjee @ rowjee.com (@AnirudhRowjee)<a href="https://twitter.com/AnirudhRowjee/status/1880934001474740628?ref_src=twsrc%5Etfw">January 19, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7282422011279122432" height="665" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
 </div>
