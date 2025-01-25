@@ -6,5 +6,5 @@ previewimage: "https://github.com/Ar7-cyber.png"
 tags: ["Marketing"]
 customFields:
     - Github: https://github.com/Ar7-cyber
-    - LinkedIn: www.linkedin.com/in/amrit-raj-b28a95258
+    - Linkedin: https://www.linkedin.com/in/amrit-raj-b28a95258
 ---
