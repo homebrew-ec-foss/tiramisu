@@ -1,11 +1,11 @@
 ---
-title: "CFP: FOSS Talks 2.0"
+title: "FOSS Talks 2.0"
 date: "2025-01-14"
 tags: [FOSS, talks]
 collections: [events, featured]
 #layout: post
 previewimage: 
-description: "Apply to Speak at FOSS Talks 2.0"
+description: "FOSStering togetherness!"
 layout: page
 ---
 
