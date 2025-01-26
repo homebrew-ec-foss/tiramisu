@@ -4,13 +4,17 @@ layout: page
 scripts: [featured_post.js]
 ---
 
-<h1 style="margin-top: 0.4rem; font-family: Inter; font-size: 3.2rem; font-weight: 700;">HSP PESUECC</h1>
+<h1 style="margin-top: 0.4rem; font-family: Inter; font-size: 3.2rem; font-weight: 700; color:#00fb6b;">HSP@127.0.0.1</h1>
 
-<p style="margin-top: 0.4rem; font-size: 1.6rem; font-weight: 350; font-family: AzeretMono, monospace;"> Hackerspace PESUECC is a Student-Powered Developer Community located at PES University, Electronic City Campus.</p>
+<p style="margin-top: 0.4rem; font-size: 1.6rem; font-weight: 350; font-family: AzeretMono, monospace;">🚀 You've landed at the lair of FOSS evangelists at PES University! <br/>Whether you're here to fork around, squash bugs or just vibe with fellow geeks, you've found your tribe! ✨</p>
 
-The club was started in 2021, with a founding team of five people. Presently, the club has more than 36 Staff, and remains an open, student-run and student-directed community.
+We are <span style="color:#00fb6b; font-style:italic;">HSP</span>, a FOSS-driven student developer community based at PES University, Electronic City Campus. Since 2021, we’ve been dedicated to raising awareness about open source and fostering a culture of knowledge sharing through discussions and in-depth events about exciting engineering topics. Today, our community has grown into a thriving family of over 100 members, all united by a passion for learning, innovation and collaboration!
 
-## Featured
+## But what is FOSS?
+In contrast to propietary software, <span style="color:#00fb6b; font-style:italic;">Free and Open Source Software</span> or FOSS is open for all to study, use, modify and redistribute under an open-source license. A good example is <a href="https://github.com/anna-ssg/anna">anna</a>, a lightning-fast static site generator that was developed by our members, which powers this website! ⚡  
+
+To learn more about FOSS, check out <a href="https://homebrew.hsp-ec.xyz">Homebrew</a> - our very own FOSS wing that's open to all open-source enthusiasts!
+# Featured
 
 <!-- <div class="home-featured" style="margin: 30px 0; padding: 0; width: 100%; height: auto;">
   <iframe 
@@ -53,15 +57,20 @@ The club was started in 2021, with a founding team of five people. Presently, th
 
 
 </div>
-
+<!--
 ## Links
+-->
 
-<div class="home-nav">
+<!-- <div class="home-nav">
 
 [Homebrew FOSS by HSP PESUECC](https://homebrew.hsp-ec.xyz/)
 
 [Instagram](https://www.instagram.com/hsp.pesuecc/)
 
+[LinkedIn](https://www.linkedin.com/company/hsp-pesu-ecc/)
+
+[X](https://x.com/hsp_ecc)
+
 [YouTube](https://www.youtube.com/channel/UCtFFsoFIBV0udCCf6ryNFAQ)
 
-</div>
+</div> -->
