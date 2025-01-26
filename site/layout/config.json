@@ -7,6 +7,9 @@
       "manifesto": "/collections/manifesto.html"
     },
     {
+      "homebrew": "https://homebrew.hsp-ec.xyz"
+    },
+    {
       "design": "/collections/design.html"
     },
     {
@@ -27,11 +30,10 @@
   "author": "HSP",
   "themeURL": "/static/styles/default_imports.css",
   "copyright": "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.",
-  "collectionLayouts":
-    {
-      "collections/design.html": "collection-subpage-design",
-      "collections/events.html": "collection-subpage-events",
-      "collections/featured.html": "collection-subpage-featured",
-      "collections/members.html": "collection-subpage-members"
-    }
+  "collectionLayouts": {
+    "collections/design.html": "collection-subpage-design",
+    "collections/events.html": "collection-subpage-events",
+    "collections/featured.html": "collection-subpage-featured",
+    "collections/members.html": "collection-subpage-members"
+  }
 }
