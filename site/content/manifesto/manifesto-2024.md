@@ -48,9 +48,9 @@ As the new semester begins, we recognize that the college commitments of our mem
 
 ## Closing Note 
 
-We sincerely appreciate you taking out the time and effort to read through this manifesto and understand our objectives for this academic year!
+We sincerely appreciate you taking the time and effort to read through this manifesto and understand our objectives for this academic year!
 
-If you are a student at PESUECC and align with our vision, reach out to us on social media handles or drop us an email on <a href="mailto:hackerspace.ecc@pes.edu">hackerspace.ecc@pes.edu</a> to chat with us! 
+If you are a student at PESUECC and align with our vision, reach out to us on our social media handles or drop an email to <a href="mailto:hackerspace.ecc@pes.edu">hackerspace.ecc@pes.edu</a> to chat with us! 
 For community members, we look forward to your active participation in achieving our goals. Engaging with the community offers a wealth of opportunities and your involvement not only contributes to our collective success but also towards your learning and growth.
 
 To a new journey filled with learning!
