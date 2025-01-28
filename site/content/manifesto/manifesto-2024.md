@@ -4,7 +4,7 @@ date: "2025-01-28"
 tags: [manifesto, FOSS, tilde, HSP]
 collections: [manifesto]
 description: New visions. New ambitions. Charting the course for a new academic year filled with growth, innovation and the love of FOSS!
-authors: ["Achyuth Yogesh"]
+authors: ["Achyuth Yogesh Sosale"]
 layout: post
 ---
 
