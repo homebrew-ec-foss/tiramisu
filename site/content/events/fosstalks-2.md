@@ -60,7 +60,7 @@ Here is an [example](https://github.com/homebrew-ec-foss/tiramisu/discussions/43
 
 <a href="https://www.linkedin.com/in/balakrishna-mukundaraj-97557622" style="display:flex; justify-content:center; ">
 
-## Balakrisha Mukundraj
+## Balakrisha Mukundaraj
 
 <img src="https://media.licdn.com/dms/image/v2/C5603AQFvFj98C9aO_Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1619138243791?e=1743638400&v=beta&t=-drhdXhTm6PQ5jZTJZGKoN4MsDG3bNVYF_f1XD3HsKw" alt="Balakrishna Mukundraj" style="border-radius: 50%;"/></a>
 
