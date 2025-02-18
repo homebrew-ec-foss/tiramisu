@@ -5,8 +5,11 @@ tags: [FOSS, Networking, eBPF, Kernel]
 collections: [events]
 description: Content related to the eBPF workshop
 authors: ["HSP"]
-previewimage: /static/images/gallery/
 layout: post
+previewimage: https://i.imgur.com/51JRzZL.png
 ---
 
-wip
+eBPF Workshop
+
+> Give your Kernel Superpowers!
+
