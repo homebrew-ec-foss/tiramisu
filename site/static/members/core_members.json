@@ -29,13 +29,12 @@
       "Instagram": "https://instagram.com"
     }
   },
-  "Reema": {
+  "Reema Sarkar": {
     "position": "Design Lead",
-    "image": "https://api.dicebear.com/9.x/glass/svg/",
+    "image": "/static/images/members/ReemaSarkar.jpg",
     "links": {
-      "Github": "https://github.com/",
-      "Linkedin": "https://linkedin.com/in",
-      "Instagram": "https://instagram.com"
+      "Github": "https://github.com/reema-s1",
+      "Linkedin": "https://www.linkedin.com/in/reema-sarkar-0601a02b8/"
     }
   },
   "Lakshitha": {

@@ -20,8 +20,6 @@
                     {{$CollectionSet := index .DeepDataMerge.CollectionsMap .PageURL}}
                     {{range $CollectionSet }}
 
-                    {{if not (strSliceContains .Frontmatter.Collections "core_team")}}
-
                     <div class="member-card" href="/{{.CompleteURL}}">
 
                         <img class="member-card-image" loading="lazy" src="{{.Frontmatter.PreviewImage}}">
@@ -38,8 +36,6 @@
                         </div>
 
                     </div>
-
-                    {{end}}
 
                     {{end}}
                 </div >
