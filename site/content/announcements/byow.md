@@ -2,7 +2,7 @@
 title: Build Your Own Website
 description: A Hands-on workshop - Build your own website!
 date: 2022-09-14
-collections: [events]
+collections: [announcements]
 layout: post
 previewimage: https://i.imgur.com/Q0aLUx0.png
 ---

@@ -1,0 +1,36 @@
+{{ define "collection-subpage-announcements"}}
+{{$PageData := index .DeepDataMerge.Collections .PageURL}}
+{{ template "head_collections_subpage" .}}
+
+<body>
+
+    {{template "header" .}}
+
+    <div class="container">
+
+        <div class="events-collection">
+
+            {{$CollectionSet := index .DeepDataMerge.CollectionsMap .PageURL}}
+            {{range $CollectionSet }}
+            <a class="events-card" href="/{{.CompleteURL}}">
+                {{ if eq (len .Frontmatter.PreviewImage) 0 }}
+                {{ else }}
+                <img loading="lazy" class="event-card-image" src="{{ .Frontmatter.PreviewImage }}" />
+                {{end}}
+                <h2 class="event-card-title">{{.Frontmatter.Title}}</h2>
+                <p class="event-card-date">{{.Frontmatter.Date}}</p>
+                <p class="event-card-desc">{{.Frontmatter.Description}}</p>
+            </a>
+            {{end}}
+
+        </div>
+
+    </div>
+
+    {{template "footer" .}}
+
+</body>
+
+</html>
+
+{{ end }}

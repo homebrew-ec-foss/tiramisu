@@ -1,7 +1,7 @@
 {
   "navbar": [
     {
-      "events": "/collections/events.html"
+      "announcements": "/collections/announcements.html"
     },
     {
       "manifesto": "/collections/manifesto.html"
@@ -24,15 +24,13 @@
   ],
   "baseURL": "https://wonderful-pegasus-a6899b.netlify.app",
   "siteTitle": "HSP",
-  "siteScripts": [
-    "hamburger.js"
-  ],
+  "siteScripts": ["hamburger.js"],
   "author": "HSP",
   "themeURL": "/static/styles/default_imports.css",
   "copyright": "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.",
   "collectionLayouts": {
     "collections/design.html": "collection-subpage-design",
-    "collections/events.html": "collection-subpage-events",
+    "collections/announcements.html": "collection-subpage-announcements",
     "collections/featured.html": "collection-subpage-featured",
     "collections/members.html": "collection-subpage-members"
   }

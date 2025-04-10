@@ -2,7 +2,7 @@
 title: Prerequisite for the 11ty Workshop
 date: "2022-09-14"
 tags: [11ty, WebDev]
-collections: [events]
+collections: [announcements]
 description: Prerequisite and dependencies for the 11ty Workshop
 authors: ["Saksham Alok"]
 layout: post

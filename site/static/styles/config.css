@@ -23,7 +23,7 @@
 
 :root {
     /* dimensions */
-    --body-width: 45rem;
+    --body-width: 60%;
 }
 
 /* @media (prefers-color-scheme: light) {
@@ -165,24 +165,24 @@ h6 {
     font-size: 1.2rem;
 }
 
-* + h1,
-* + h2 {
+*+h1,
+*+h2 {
     margin-top: 3.7rem;
 }
 
-* + h3,
-* + h4,
-* + h5 {
+*+h3,
+*+h4,
+*+h5 {
     margin-top: 3rem;
 }
 
-* + p {
+*+p {
     margin-top: 2rem;
 }
 
-h2 + p,
-h3 + p,
-h4 + p {
+h2+p,
+h3+p,
+h4+p {
     margin-top: 1rem;
 }
 
@@ -237,7 +237,7 @@ ul {
 
 ol,
 li {
-    & > * {
+    &>* {
         font-size: 1.1rem;
         line-height: 1.5;
     }
@@ -332,7 +332,7 @@ iframe {
     height: auto;
 }
 
-pre > code {
+pre>code {
     overflow-x: scroll;
     display: block;
     white-space: pre;
@@ -364,7 +364,7 @@ pre code {
     font-size: 1.3rem;
 }
 
-pre > code {
+pre>code {
     color: var(--color-heading);
     display: block;
     text-indent: 0;
@@ -389,15 +389,15 @@ pre code.hljs {
 /* margin-bottom: 0.2rem; */
 /*}*/
 
-p > code,
-li > code,
-dd > code,
-td > code,
-h1 > code,
-h2 > code,
-h3 > code,
-h4 > code,
-a > code {
+p>code,
+li>code,
+dd>code,
+td>code,
+h1>code,
+h2>code,
+h3>code,
+h4>code,
+a>code {
     font-family: Iosevka, monospace;
     color: var(--color-heading);
     background-color: var(--inline-code-bg);
@@ -414,23 +414,23 @@ a > code {
 
 /* details {
     /*margin-top: 1rem;*/
-    color: var(--color-subheading);
-    font-size: 0.95rem;
-    font-family: Inter, sans-serif;
-    font-weight: 550;
-    user-select: none;
-    -webkit-user-select: none;
+color: var(--color-subheading);
+font-size: 0.95rem;
+font-family: Inter,
+sans-serif;
+font-weight: 550;
+user-select: none;
+-webkit-user-select: none;
 
-    transition:
-        padding 300ms ease-in-out,
-        background-color 300ms ease-in-out;
+transition: padding 300ms ease-in-out,
+background-color 300ms ease-in-out;
 
-    & > ul,
-    & > ol {
-        font-weight: 350;
-        font-size: 1rem;
-        /* margin-left: 2rem; */
-    }
+&>ul,
+&>ol {
+    font-weight: 350;
+    font-size: 1rem;
+    /* margin-left: 2rem; */
+}
 }
 
 sumamry {
@@ -440,7 +440,7 @@ sumamry {
     font-size: 1.5rem;
 }
 
-details > img {
+details>img {
     width: 70%;
 }
 
@@ -449,6 +449,8 @@ details {
     margin-bottom: 1rem;
 }
 
-details > details {
+details>details {
     margin-left: 1rem;
-} */
+}
+
+*/

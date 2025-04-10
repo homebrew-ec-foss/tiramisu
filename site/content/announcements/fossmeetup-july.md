@@ -2,7 +2,7 @@
 title: "FOSS Meetup-June"
 date: "2023-05-01"
 tags: [FOSS, FrontEnd]
-collections: [events]
+collections: [announcements]
 description: A brief blog on what went down at Geeky Ants!
 authors: ["Siddarth.D.Pai", "Nishtha P"]
 author_link: https://github.com/nishtha981

@@ -2,7 +2,7 @@
 title: "Git Up and Running"
 date: "2023-02-06"
 tags: [git, introduction, github]
-collections: [events]
+collections: [announcements]
 description: Let's Learn about Git and Github!
 authors: ["Anirudh Rowjee"]
 author_link: https://rowjee.com

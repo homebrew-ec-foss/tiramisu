@@ -2,7 +2,7 @@
 title: "FOSS Talks"
 date: "2024-03-23"
 tags: [FOSS, talks]
-collections: [events]
+collections: [announcements]
 description: FOSS Talks 1.0
 layout: post
 previewimage: https://i.imgur.com/XbBy5gP.png

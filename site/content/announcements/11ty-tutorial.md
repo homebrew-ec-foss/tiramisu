@@ -2,7 +2,7 @@
 title: Basic 11ty Tutorial
 date: "2022-09-16"
 tags: [11ty, WebDev]
-collections: [events]
+collections: [announcements]
 description: Workshop on 11ty
 authors: ["Saksham Alok"]
 layout: post
