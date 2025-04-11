@@ -9,7 +9,7 @@ previewimage: https://i.imgur.com/ehRlMQJ.png
 
 # Club Restructure Announcement
 
-**Note: With effect from Monday, 13th April 2025.**
+**Note: With effect from Monday, 14th April 2025.**
 
 To improve planning and ideation, member engagement and growth opportunities, the HSP core team has decided to adopt a flatter, more flexible community structure!
 
