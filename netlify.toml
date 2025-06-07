@@ -1,15 +1,39 @@
 [build]
-base  = "/"
-publish = "site/rendered"
-command = "chmod +x build.sh; ./build.sh"
-
-# [[redirects]]
-# from = "/*"
-# to = "/404.html"
-# status = 404
+  publish = "site/rendered"
+  command = "chmod +x build.sh; ./build.sh"
 
 [[redirects]]
   from = "/fosstalks"
-  to = "/events/fosstalks-2"
+  to = "/announcements/fosstalks-2"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://main--tiramisu-hsp.netlify.app/*"
+  to = "https://hsp-ec.xyz/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://tiramisu-hsp.netlify.app/*"
+  to = "https://hsp-ec.xyz/:splat"
+  status = 301
+  force = true
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "site/rendered"
+  baseUrl = "https://hsp-ec.xyz"
+  prettyURLs = true
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+ [plugins.inputs]
+ baseUrl = "https://hsp-ec.xyz"
+ sitemapPath = "/sitemap.xml"
+ ignorePeriod = 0
+ providers = ["google", "yandex"]
+
