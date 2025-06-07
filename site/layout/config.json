@@ -22,7 +22,7 @@
       "about": "/about.html"
     }
   ],
-  "baseURL": "https://wonderful-pegasus-a6899b.netlify.app",
+  "baseURL": "https://hsp-ec.xyz",
   "siteTitle": "HSP",
   "siteScripts": ["hamburger.js"],
   "author": "HSP",

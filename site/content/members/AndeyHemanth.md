@@ -6,6 +6,6 @@ previewimage: "https://github.com/Andy34G7.png"
 tags: ["Marketing"]
 customFields:
     - Github: https://github.com/Andy34G7
-    - Linkedin: www.linkedin.com/in/andy34g7
+    - Linkedin: https://linkedin.com/in/andy34g7
 
 ---

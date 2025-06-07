@@ -1,6 +1,6 @@
 ---
 title: Reema Sarkar
-description: Design Team Lead
+description: Design Team Lead 2025
 collections: ["members>2023","members>2024","core_team"]
 previewimage: /static/images/members/ReemaSarkar.jpg
 customFields:

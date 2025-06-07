@@ -1,12 +1,6 @@
 [build]
-  publish = "site/rendered"
-  command = "chmod +x build.sh; ./build.sh"
-
-[[redirects]]
-  from = "/fosstalks"
-  to = "/announcements/fosstalks-2"
-  status = 301
-  force = true
+  publish = "./tiramisu/site/rendered"
+  command = "./build.sh"
 
 [[redirects]]
   from = "https://main--tiramisu-hsp.netlify.app/*"
@@ -17,6 +11,12 @@
 [[redirects]]
   from = "https://tiramisu-hsp.netlify.app/*"
   to = "https://hsp-ec.xyz/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fosstalks"
+  to = "/announcements/fosstalks-2"
   status = 301
   force = true
 
