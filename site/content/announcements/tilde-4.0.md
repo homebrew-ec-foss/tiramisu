@@ -4,6 +4,7 @@ date: "2025-06-11"
 tags: [FOSS, Mentorship, Summer]
 collections: [announcements]
 description: Content related to Tilde 4.0
+previewimage: /static/images/gallery/tilde-4.0/hero.jpg
 authors: ["HSP"]
 layout: post
 ---
@@ -44,5 +45,6 @@ their projects. Like the previous year, we plan to host a “road-show” during
 the freshers orientation time, and another time in the quadrangle, to showcase
 your work to the college
 
-> Registrations for Tilde will open soon!
+> Sign up for Tilde: [forms.gle/tywe2q6NRhN7E5J59](https://forms.gle/tywe2q6NRhN7E5J59)
 
+Form closes June 30th 2025. See you soon!
