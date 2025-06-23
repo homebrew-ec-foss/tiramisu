@@ -4,26 +4,23 @@ layout: page
 scripts: [featured_post.js]
 ---
 
-<h1 style="margin-top: 1rem; font-family: Inter; font-size: 2.2rem; font-weight: 700; color:#00fb6b;">HSP@127.0.0.1</h1>
+<h1 style="margin-top: 0.4rem; font-family: Inter; font-size: 3.2rem; font-weight: 700;">HSP PESUECC</h1>
 
-We are <span style="color:#00fb6b; font-style:italic;">HSP</span>, a FOSS-driven student developer community based at PES University, Electronic City Campus. Since 2021, we have been dedicated to raising awareness about open source and fostering a culture of knowledge sharing. Today, our community has blossomed into a thriving family of over a 100 members, united by a shared passion for learning, innovation, and collaboration!
+<p style="margin-top: 0.2rem; font-size: 1.5rem; font-weight: 300; font-family: AzeretMono, monospace;"> 
+We are a FOSS-driven <span style="color:#00fb6b; font-style:bold;">student
+developer community</span> based at PES University, Electronic City Campus. 
+</p>
 
-<video autoplay muted loop width="300" style="margin: 2rem auto 0 auto; display: flex; justify-content: center;">
-<source src="/static/videos/HSPLogoAscii.mp4" type="video/mp4"/>
+Since 2021, we have been dedicated to raising awareness about open source and
+fostering a culture of knowledge sharing. Today, our community has blossomed
+into a thriving family of over a 100 members, united by a shared passion for
+learning, innovation, and collaboration!
+
+<video autoplay muted loop width="300" style="margin: 2rem auto 0 auto;
+display: flex; justify-content: center;"> <source src="/static/videos/HSPLogoAscii.mp4" type="video/mp4"/>
 </video> 
-<!--
-<img src = "/static/videos/HSPLogoAscii.gif" width="100" alt="HSPLogoAscii" style="margin: 2rem auto 0 auto;" >
--->
 
 # Featured
-
-<!-- <div class="home-featured" style="margin: 30px 0; padding: 0; width: 100%; height: auto;">
-  <iframe
-    src="/collections/featured.html"
-    class="featured-iframe"
-    style="width: 100%; height: 100%; border: none; overflow-x: auto; overflow-y: hidden; scroll-behavior: smooth;">
-  </iframe>
-</div> -->
 
 <div class="home-featured">
 
