@@ -14,10 +14,12 @@
     "position": "Core Team & Operations Lead",
     "image": "https://avatars.githubusercontent.com/u/156563969?v=4",
     "links": {
-      "Linkedin": "https://www.linkedin.com/in/sanjana-saxena-a1b196280/"
+      "Linkedin": "https://www.linkedin.com/in/sanjana-saxena-a1b196280/",
       "Instagram": "https://www.instagram.com/_sanns._/"
     }
   },
+
+
   "Anisha S": {
     "position": "Design Lead",
     "image": "https://github.com/shakirth-anisha.png",
@@ -38,8 +40,11 @@
   },
   "Anshul P": {
     "position": "SMM Lead",
-    "image": "https://api.dicebear.com/9.x/glass/svg/",
+    "image": "/static/images/members/AnshulP/",
     "links": {
+      "Linkedin": "https://www.linkedin.com/in/anshul-paruchuri-53230a258/",
+      "Instagram": "https://www.instagram.com/anshul_paruchuri/",
+      "Github": "https://github.com/amateurmonke"
     }
   },
   "Andey H": {
