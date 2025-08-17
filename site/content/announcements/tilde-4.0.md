@@ -45,6 +45,11 @@ their projects. Like the previous year, we plan to host a “road-show” during
 the freshers orientation time, and another time in the quadrangle, to showcase
 your work to the college
 
-> Sign up for Tilde: [forms.gle/tywe2q6NRhN7E5J59](https://forms.gle/tywe2q6NRhN7E5J59)
+---
 
-Form closes June 30th 2025. See you soon!
+<div class="video-container">
+<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube-nocookie.com/embed/as27j9Tt_FE" frameborder="0"></iframe>
+</div>
+
+Read more about the projects on our [homebrew blog](https://homebrew.hsp-ec.xyz/tags/tilde-4.0)
+
