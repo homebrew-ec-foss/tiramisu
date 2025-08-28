@@ -11,14 +11,20 @@ We are a FOSS-driven <span style="color:#00fb6b; font-style:bold;">student
 developer community</span> based at PES University, Electronic City Campus. 
 </p>
 
+<div id="hsp-spinner" style="display:flex; justify-content:center; align-items:center; margin: 1.25rem 0 2rem;">
+  <div style="width: min(380px, 90vw);">
+    <object data="/static/images/hsp-spinner.svg" type="image/svg+xml" width="100%" height="100%" aria-label="HSP spinning logo" role="img">
+      <img src="/static/images/hsp-spinner.svg" alt="HSP spinning logo" style="width:100%;height:auto;" />
+    </object>
+  </div>
+</div>
+
 Since 2021, we have been dedicated to raising awareness about open source and
 fostering a culture of knowledge sharing. Today, our community has blossomed
 into a thriving family of over a 100 members, united by a shared passion for
 learning, innovation, and collaboration!
 
-<video autoplay muted loop width="300" style="margin: 2rem auto 0 auto;
-display: flex; justify-content: center;"> <source src="/static/videos/HSPLogoAscii.mp4" type="video/mp4"/>
-</video> 
+
 
 # Featured
 
