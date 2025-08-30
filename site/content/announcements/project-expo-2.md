@@ -3,11 +3,13 @@ title: Project Expo 2.0
 date: "2025-09-03"
 tags: [FOSS]
 collections: [announcements]
-description: Project Expo 2.0
+description: "Demos, networking and ideas."
 previewimage: /static/images/gallery/project-expo-2/expo2.0.png
 authors: ["HSP"]
 layout: post
 ---
+
+![blob](/static/images/gallery/blob/waldo.jpg)
 
 HSP is bringing to you a one of a kind, networking event where you get to meet the whole team of HSP; yes, all of them!
 
