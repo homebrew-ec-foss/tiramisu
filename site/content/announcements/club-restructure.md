@@ -4,7 +4,7 @@ description:
 date: 2025-04-10
 collections: [announcements]
 layout: post
-previewimage: https://i.imgur.com/ehRlMQJ.png
+previewimage: /static/images/hsp-spinner.svg
 ---
 
 # Club Restructure Announcement
