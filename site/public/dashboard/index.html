@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop and Event Dashboard</title>
+    <link rel="stylesheet" href="/static/dashboard/dashboard.css">
+</head>
+<body>
+    <div class="background-layer"></div>
+    <div class="overlay-layer"></div>
+    <div class="content-container">
+    </div>
+
+    <script src="/static/dashboard/dashboard.js"></script>
+    <script>
+        // Get event ID from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const eventId = urlParams.get('event') || 'project-expo-2'; // Default event
+
+        // Initialize dashboard
+        const dashboard = new DashboardManager();
+        dashboard.init(eventId);
+    </script>
+</body>
+</html>
