@@ -4,6 +4,68 @@ layout: page
 scripts: [featured_post.js]
 ---
 
+<script>
+setTimeout(() => {
+    const banner = document.createElement('div');
+    Object.assign(banner.style, {
+        position: 'fixed',
+        top: '20px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        backgroundColor: '#333',
+        color: '#fff',
+        padding: '15px 25px',
+        borderRadius: '5px',
+        fontSize: '16px',
+        zIndex: '1000',
+        boxShadow: '0 2px 8px rgba(0,0,0,0.3)',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '10px'
+    });
+
+    // Add image (replace with actual URL)
+    const img = document.createElement('img');
+    img.src = "static/images/gallery/project-expo-2/expo2.0.png";
+    img.style.width = '60px';
+    img.style.height = '60px';
+    img.style.objectFit = 'cover';
+    img.style.borderRadius = '5px';
+    banner.appendChild(img);
+
+    // Add text
+    const text = document.createElement('span');
+    text.textContent = "REG NOW: Project Expo 2.0";
+    banner.appendChild(text);
+
+    const timerSpan = document.createElement('span');
+    let countdown = 3;
+    timerSpan.textContent = ` Redirecting in ${countdown}s`;
+    banner.appendChild(timerSpan);
+
+    const stopBtn = document.createElement('button');
+    stopBtn.textContent = 'Stop';
+    Object.assign(stopBtn.style, {marginLeft:'10px', padding:'5px 10px', cursor:'pointer'});
+    banner.appendChild(stopBtn);
+
+    document.body.appendChild(banner);
+
+    let redirectTimeout = setTimeout(() => window.location.href = "https://hsp-ec.xyz/expo26", countdown * 1000);
+
+    const interval = setInterval(() => {
+        countdown--;
+        timerSpan.textContent = ` Redirecting in ${countdown}s`;
+        if(countdown <= 0) clearInterval(interval);
+    }, 1000);
+
+    stopBtn.addEventListener('click', () => {
+        clearTimeout(redirectTimeout);
+        clearInterval(interval);
+        timerSpan.textContent = " Redirect stopped";
+    });
+
+}, 2000);
+</script>
 <h1 style="margin-top: 0.4rem; font-family: Inter; font-size: 3.2rem; font-weight: 700;">HSP PESUECC</h1>
 
 <p style="margin-top: 0.2rem; font-size: 1.5rem; font-weight: 300; font-family: AzeretMono, monospace;"> 
@@ -24,10 +86,7 @@ fostering a culture of knowledge sharing. Today, our community has blossomed
 into a thriving family of over a 100 members, united by a shared passion for
 learning, innovation, and collaboration!
 
-
-
 # Featured
-
 
 <div class="home-featured">
 
