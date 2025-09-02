@@ -147,7 +147,7 @@ setTimeout(() => {
     textContainer.style.minWidth = '0';
     
     const text = document.createElement('div');
-    text.textContent = "live";
+    text.textContent = "";
     text.style.fontSize = '13px';
     text.style.fontWeight = '500';
     text.style.opacity = '0.9';

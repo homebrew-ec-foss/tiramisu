@@ -1,11 +1,11 @@
 {
   "project-expo-2": {
     "title": "Project Expo 2.0",
-    "displayName": "Event Registrations",
+    "displayName": "LIVE: Participants Checked-in Semhall3",
     "spinner": "/static/images/hsp-spinner.svg",
     "poster": "/static/images/gallery/project-expo-2/expo2.0.png",
     "gsheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTECbMuUivrQd0W2W1B2GnPLqgOjF0IxDZ83sQYrBX-5qVsQtd8zx-cPBjr2jluuv-uV6J2BGirG1Id/pub?gid=1889036144&single=true&output=csv",
-    "dataColumn": 0,
+    "dataColumn": 2,
     "updateInterval": 5000,
     "active": true,
     "colors": {
