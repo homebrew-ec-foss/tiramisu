@@ -96,3 +96,21 @@
 .post-body blockquote + p + ul {
     margin-top: 0.6rem;
 }
+
+/* Image spacing for better visual separation */
+.post-body img {
+    margin: 2rem auto;
+    display: block;
+}
+
+/* Reduce spacing for first image after headings */
+.post-body h1 + p > img,
+.post-body h2 + p > img,
+.post-body h3 + p > img {
+    margin-top: 1rem;
+}
+
+/* Ensure proper spacing between consecutive images */
+.post-body img + p > img {
+    margin-top: 1.5rem;
+}

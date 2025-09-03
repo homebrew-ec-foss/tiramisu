@@ -70,6 +70,24 @@
         /* dimensions */
         --body-width: 45rem;
     }
+
+    /* Image styling for dark mode */
+    img {
+        width: 100%;
+        border-radius: 8px;
+        margin: 1.5rem auto;
+        display: block;
+    }
+
+    /* Override for footer social icons - keep them inline */
+    footer img {
+        width: 24px !important;
+        height: 24px !important;
+        margin: 0 5px !important;
+        display: inline !important;
+        vertical-align: middle !important;
+        border-radius: 0 !important;
+    }
 }
 
 /* @font-face {
@@ -206,14 +224,6 @@ a {
     font-style: none;
     color: var(--color-primary);
     font-family: InterItalic;
-}
-
-img {
-    width: 100%;
-    border-radius: 8px;
-
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* ol,
@@ -413,7 +423,7 @@ a>code {
 }
 
 /* details {
-    /*margin-top: 1rem;*/
+    margin-top: 1rem;
 color: var(--color-subheading);
 font-size: 0.95rem;
 font-family: Inter,
@@ -429,11 +439,11 @@ background-color 300ms ease-in-out;
 &>ol {
     font-weight: 350;
     font-size: 1rem;
-    /* margin-left: 2rem; */
+    margin-left: 2rem;
 }
 }
 
-sumamry {
+summary {
     color: var(--color-heading);
     font-weight: 500;
     opacity: 1;
