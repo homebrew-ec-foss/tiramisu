@@ -1,11 +1,11 @@
 {
   "project-expo-2": {
-    "title": "Project Expo 2.0",
-    "displayName": "Participants in Semhall3",
+    "title": "Modal Editors",
+    "displayName": "RSVP Count",
     "spinner": "/static/images/hsp-spinner.svg",
-    "poster": "/static/images/gallery/project-expo-2/expo2.0.png",
-    "gsheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTECbMuUivrQd0W2W1B2GnPLqgOjF0IxDZ83sQYrBX-5qVsQtd8zx-cPBjr2jluuv-uV6J2BGirG1Id/pub?gid=1889036144&single=true&output=csv",
-    "dataColumn": 2,
+    "poster": "/static/images/gallery/modal-editors/modal-editors.png",
+    "gsheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS4z0LapDAjdrUiZGP2B7VrQJrgekKQsIFsORijdBC7j9nWZB4K8KKnI2dbnOS9YwkKREXOQZAwSO-h/pub?gid=482998302&single=true&output=csv",
+    "dataColumn": 1,
     "updateInterval": 5000,
     "active": true,
     "colors": {
