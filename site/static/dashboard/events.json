@@ -1,7 +1,7 @@
 {
   "project-expo-2": {
     "title": "Modal Editors",
-    "displayName": "RSVP Count",
+    "displayName": "Event Resgistrations",
     "spinner": "/static/images/hsp-spinner.svg",
     "poster": "/static/images/gallery/modal-editors/modal-editors.png",
     "gsheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS4z0LapDAjdrUiZGP2B7VrQJrgekKQsIFsORijdBC7j9nWZB4K8KKnI2dbnOS9YwkKREXOQZAwSO-h/pub?gid=482998302&single=true&output=csv",

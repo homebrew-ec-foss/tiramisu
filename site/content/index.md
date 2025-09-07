@@ -30,6 +30,13 @@ learning, innovation, and collaboration!
 
 <div class="featured-card">
 <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+
+  <a href="/announcements/modal-editors/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; padding: 0.6rem; border-radius: 8px; background-color: rgba(0,0,0,0.02); transition: background-color 0.15s ease; flex: 1;">
+    <div style="width: 100%; height: 120px; background-image: url('/static/images/gallery/modal-editors/modal-editors.png'); background-size: cover; background-position: center; border-radius: 6px; margin-bottom: 0.4rem;"></div>
+    <h4 style="font-size: 0.9rem; margin: 0 0 0.2rem 0; color: var(--color-primary);">Modal Editors</h4>
+    <p style="font-size: 0.7rem; margin: 0; color: var(--color-text-dim);">Sept 2025</p>
+  </a>
+
   <a href="/announcements/project-expo-2/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; padding: 0.6rem; border-radius: 8px; background-color: rgba(0,0,0,0.02); transition: background-color 0.15s ease; flex: 1;">
     <div style="width: 100%; height: 120px; background-image: url('/static/images/gallery/project-expo-2/expo2.0.png'); background-size: cover; background-position: center; border-radius: 6px; margin-bottom: 0.4rem;"></div>
     <h4 style="font-size: 0.9rem; margin: 0 0 0.2rem 0; color: var(--color-primary);">Project Expo 2.0</h4>
@@ -48,11 +55,6 @@ learning, innovation, and collaboration!
     <p style="font-size: 0.7rem; margin: 0; color: var(--color-text-dim);">Sept 2024</p>
   </a>
   
-  <a href="/announcements/docker-undocked/" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; padding: 0.6rem; border-radius: 8px; background-color: rgba(0,0,0,0.02); transition: background-color 0.15s ease; flex: 1;">
-    <div style="width: 100%; height: 120px; background-image: url('/static/images/gallery/docker_undocked/docker_undocked.jpg'); background-size: cover; background-position: center; border-radius: 6px; margin-bottom: 0.4rem;"></div>
-    <h4 style="font-size: 0.9rem; margin: 0 0 0.2rem 0; color: var(--color-primary);">Docker Undocked</h4>
-    <p style="font-size: 0.7rem; margin: 0; color: var(--color-text-dim);">Feb 2024</p>
-  </a>
 </div>
 </div>
 
