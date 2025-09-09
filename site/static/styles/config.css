@@ -26,7 +26,7 @@
     --body-width: 60%;
 }
 
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
     :root {
         --color-heading: #000000;
         --color-subheading: #606060;
@@ -39,14 +39,16 @@
         --color-background-dim: #b0b0b07a;
         --color-background-low: #ffffff50;
 
-        --inline-code-bg: #161618;
-
         --color-primary: #00fb6b;
         --color-primary-dim: #00fb6b7f;
         --inline-code-bg: #f9f8f9;
 
+        /* Code block colors for light mode */
+        --code-bg: #f8f8f8;
+        --code-text: #333333;
+        --code-border: #e0e0e0;
     }
-} */
+}
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -61,11 +63,14 @@
         --color-background-dim: #2020207f;
         --color-background-low: #10100e50;
 
-        --inline-code-bg: #161618;
-
         --color-primary: #00fb6b;
         --color-primary-dim: #00fb6b7f;
         --inline-code-bg: #262628;
+
+        /* Code block colors for dark mode */
+        --code-bg: #1a1a1a;
+        --code-text: #e0e0e0;
+        --code-border: #404040;
 
         /* dimensions */
         --body-width: 45rem;
@@ -362,16 +367,18 @@ q {
 }
 
 pre code {
-    color: var(--color-heading);
+    color: var(--code-text, var(--color-heading));
+    background-color: var(--code-bg, var(--color-background-dim)) !important;
+    border: 1px solid var(--code-border, var(--color-text-low));
     margin-top: 2rem;
     margin-bottom: 2rem;
 
     font-family: monospace;
-    /* background: ; */
     overflow-x: scroll;
     scrollbar-width: none;
     border-radius: 8px;
     font-size: 1.3rem;
+    padding: 1rem;
 }
 
 pre>code {
@@ -382,7 +389,9 @@ pre>code {
 }
 
 pre code.hljs {
-    color: var(--color-heading);
+    color: var(--code-text, var(--color-heading));
+    background-color: var(--code-bg, var(--color-background-dim)) !important;
+    border: 1px solid var(--code-border, var(--color-text-low));
     font-family: monospace;
     font-variant-ligatures: common-ligatures;
     font-feature-settings: "liga" on;
@@ -390,6 +399,7 @@ pre code.hljs {
     font-size: 0.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-radius: 8px;
     /* padding: 0.5rem; */
 }
 
