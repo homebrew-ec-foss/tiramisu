@@ -32,15 +32,13 @@ Just bring along your laptop — that’s all you need to get started. **Please 
 
 #### Windows
 
-1. Open **Command Prompt** or **PowerShell**.
-2. Install Neovim using [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) (Windows Package Manager):
-    ```sh
-    winget install Neovim.Neovim
-    ```
-3. Launch Neovim:
-    ```sh
-    nvim --version
-    ```
+1. Download the installer: [Neovim v0.11.4 for Windows (.msi)](https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-win64.msi)
+2. Run the downloaded `.msi` file and follow the installation instructions. 
+3. Open **Command Prompt** or **PowerShell**.
+4. After installation, verify Neovim by running:
+     ```sh
+     nvim --version
+     ```
 
 <!-- > If you don’t have winget, [follow this guide to set it up](https://learn.microsoft.com/en-us/windows/package-manager/winget/). -->
 
