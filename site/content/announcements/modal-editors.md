@@ -65,30 +65,37 @@ Just bring along your laptop — that’s all you need to get started. **Please 
 #### Linux/ChromeOS
 
 1. Open **Terminal**.
-2. Install Neovim using your distribution’s package manager:
+2. Download the Neovim AppImage:
 
-    - **Debian/Ubuntu:**
-      ```sh
-      sudo apt update
-      sudo apt install neovim
-      ```
-    - **Fedora:**
-      ```sh
-      sudo dnf install neovim
-      ```
-    - **Arch Linux:**
-      ```sh
-      sudo pacman -S neovim
-      ```
+    Copy, paste the following into your terminal
+
+    ```sh
+    curl -LO https://github.com/neovim/neovim-releases/releases/download/v0.11.4/nvim-linux-x86_64.appimage;
+    chmod u+x nvim-linux-x86_64.appimage;
+    ./nvim-linux-x86_64.appimage --version;
+    ```
+
+    <details>
+    <summary>Any error?</summary>
+
+    Should you get an error, your system does not support FUSE, so extract the AppImage and run Neovim directly:
+
+    ```sh
+    ./nvim-linux-x86_64.appimage --appimage-extract
+    ./squashfs-root/usr/bin/nvim --version
+    ```
+    </details>
+
+<br>
 
 3. Launch Neovim:
     ```sh
-    nvim --version
+    ./nvim-linux-x86_64.appimage --version
     ```
 
 ---
 
-> You should see something like this
+> TLDR: You should see something like this
 
 ```sh
 [blob@hsp:~]$ nvim --version 
@@ -97,6 +104,9 @@ Build type: Release
 LuaJIT 2.1.1753364724
 Run "nvim -V1 -v" for more info
 ```
+
+
+> You are all set for the workshop, see you wednesday!
 
 If you have any questions or need help, reach out on our [Discord](https://discord.gg/M4C9bm9Y) forum for this event.  
 
