@@ -1,5 +1,5 @@
 ---
-title: Vinaayak G Dasika
+title: Lil D
 description: Mentor Team
 collections: ["members>2025","members>2026","mentor_team"]
 tags: ["mentor"]
