@@ -13,20 +13,19 @@ Modal editors are a unique class of text editors that let you work with text thr
 
 This hands-on workshop is designed to give you a strong foundation in modal editing. You’ll explore the core principles that make these editors powerful and see how their workflows can dramatically improve your coding speed and precision.
 
-### What to expect:
 
-- Learn the fundamentals of modal editing and why it’s different from traditional editors
-- Get practical exposure to essential commands and editing techniques
-- Discover how to customize and extend your editor to match your workflow
-- Explore creative ways to integrate modal editors into your projects
+By the end, you’ll not only understand how modal editors work but also have the confidence to start using them in real-world projects. Whether you’re completely 
+new or looking to sharpen your skills, this session will help you unlock a faster, smarter way to code.
 
-> By the end, you’ll not only understand how modal editors work but also have the confidence to start using them in real-world projects. Whether you’re completely new or looking to sharpen your skills, this session will help you unlock a faster, smarter way to code.
+<br>
 
-#### Hey, this event is over. Thank you for attending!
+<div class="video-container">
+<iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube-nocookie.com/embed/21_o11RJH4M" frameborder="0"></iframe>
+</div>
+
+<br>
 
 > For more details, check out the blog post here: [$homebrew/modal-editors](https://homebrew.hsp-ec.xyz/posts/modal-editors/)
-
-A video recording of the event will be available soon.
 
 If you have any questions or need help, reach out on our [Discord](https://discord.gg/M4C9bm9Y) forum for this event.
 
@@ -46,8 +45,6 @@ Just bring along your laptop — that’s all you need to get started. **Please 
      ```sh
      nvim --version
      ```
-
-<!-- > If you don’t have winget, [follow this guide to set it up](https://learn.microsoft.com/en-us/windows/package-manager/winget/). -->
 
 ---
 
