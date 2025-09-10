@@ -17,7 +17,7 @@ class DashboardManager {
       this.startDataFetch();
     } catch (error) {
       console.error('Error loading dashboard config:', error);
-      this.showError('Failed to load dashboard configuration');
+      this.showError('No Event in progress');
     }
   }
 

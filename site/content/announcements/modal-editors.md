@@ -22,7 +22,14 @@ This hands-on workshop is designed to give you a strong foundation in modal edit
 
 > By the end, you’ll not only understand how modal editors work but also have the confidence to start using them in real-world projects. Whether you’re completely new or looking to sharpen your skills, this session will help you unlock a faster, smarter way to code.
 
-> [Register Now!](https://forms.gle/UkfzAnbFpGnouSxf8)
+#### Hey, this event is over. Thank you for attending!
+
+> For more details, check out the blog post here: [$homebrew/modal-editors](https://homebrew.hsp-ec.xyz/posts/modal-editors/)
+
+A video recording of the event will be available soon.
+
+If you have any questions or need help, reach out on our [Discord](https://discord.gg/M4C9bm9Y) forum for this event.
+
 
 ---
 
@@ -106,5 +113,5 @@ Run "nvim -V1 -v" for more info
 
 > You are all set for the workshop, see you wednesday!
 
-If you have any questions or need help, reach out on our [Discord](https://discord.gg/M4C9bm9Y) forum for this event.  
 
+If you have any questions or need help, reach out on our [Discord](https://discord.gg/M4C9bm9Y) forum for this event.

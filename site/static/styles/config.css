@@ -1,56 +1,10 @@
-/* Color Scheme */
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --color-primary: #5990ac;
-        --color-primary-dim: #5990ac7f;
-        --color-text: #ffffff;
-        --color-text-dim: #ffffff7f;
-        --color-background: #000000;
-        --color-background-dim: #4a4a4a5a;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-primary: #5990ac;
-        --color-primary-dim: #5990ac7f;
-        --color-text: #000000;
-        --color-text-dim: #5a5a5a;
-        --color-background: #ffffff;
-        --color-background-dim: #a5a5a57f;
-    }
-} */
 
 :root {
     /* dimensions */
     --body-width: 60%;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-heading: #000000;
-        --color-subheading: #606060;
 
-        --color-text: #10100ed0;
-        --color-text-dim: #58585870;
-        --color-text-low: #10100e20;
-
-        --color-background: #ffffff;
-        --color-background-dim: #b0b0b07a;
-        --color-background-low: #ffffff50;
-
-        --color-primary: #00fb6b;
-        --color-primary-dim: #00fb6b7f;
-        --inline-code-bg: #f9f8f9;
-
-        /* Code block colors for light mode */
-        --code-bg: #f8f8f8;
-        --code-text: #333333;
-        --code-border: #e0e0e0;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
     :root {
         --color-heading: #ffffff;
         --color-subheading: #a0a0a0;
@@ -93,7 +47,6 @@
         vertical-align: middle !important;
         border-radius: 0 !important;
     }
-}
 
 /* @font-face {
     font-family: AzeretMono;
@@ -400,14 +353,8 @@ pre code.hljs {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 8px;
-    /* padding: 0.5rem; */
 }
 
-/*.hljs-copy-wrapper {*/
-/* margin: 0; */
-/* margin-top: 0.2rem; */
-/* margin-bottom: 0.2rem; */
-/*}*/
 
 p>code,
 li>code,
@@ -431,46 +378,3 @@ a>code {
     border-radius: 4px;
     font-size: 0.9rem;
 }
-
-/* details {
-    margin-top: 1rem;
-color: var(--color-subheading);
-font-size: 0.95rem;
-font-family: Inter,
-sans-serif;
-font-weight: 550;
-user-select: none;
--webkit-user-select: none;
-
-transition: padding 300ms ease-in-out,
-background-color 300ms ease-in-out;
-
-&>ul,
-&>ol {
-    font-weight: 350;
-    font-size: 1rem;
-    margin-left: 2rem;
-}
-}
-
-summary {
-    color: var(--color-heading);
-    font-weight: 500;
-    opacity: 1;
-    font-size: 1.5rem;
-}
-
-details>img {
-    width: 70%;
-}
-
-details {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-details>details {
-    margin-left: 1rem;
-}
-
-*/

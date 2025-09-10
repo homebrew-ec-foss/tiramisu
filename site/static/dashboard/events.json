@@ -1,21 +1,2 @@
 {
-  "project-expo-2": {
-    "title": "Modal Editors",
-    "displayName": "Participants Checked in",
-    "spinner": "/static/images/hsp-spinner.svg",
-    "poster": "/static/images/gallery/modal-editors/modal-editors.png",
-    "gsheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS4z0LapDAjdrUiZGP2B7VrQJrgekKQsIFsORijdBC7j9nWZB4K8KKnI2dbnOS9YwkKREXOQZAwSO-h/pub?gid=482998302&single=true&output=csv",
-    "dataColumn": 2,
-    "updateInterval": 5000,
-    "active": true,
-    "colors": {
-      "primary": "#00fb6b",
-      "primaryAlpha": "rgba(0, 251, 107, 0.8)",
-      "primaryIntense": "rgba(0, 251, 107, 1)",
-      "background": "rgba(0, 0, 0, 0.95)",
-      "border": "rgba(0, 251, 107, 0.4)",
-      "glow": "rgba(0, 251, 107, 0.3)",
-      "glowIntense": "rgba(0, 251, 107, 0.5)"
-    }
-  }
 }

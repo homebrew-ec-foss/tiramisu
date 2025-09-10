@@ -1,7 +1,7 @@
 ---
 title: home
 layout: page
-scripts: ["featured_post.js", "redirect.js"]
+scripts: ["featured_post.js"]
 ---
 
 <h1 style="margin-top: 0.4rem; font-family: Inter; font-size: 3.2rem; font-weight: 700;">HSP PESUECC</h1>
