@@ -1,0 +1,81 @@
+{
+  "featured_cards": [
+    {
+      "id": "modal-editors",
+      "title": "Modal Editors",
+      "date": "Sept 2025",
+      "image": "/static/images/gallery/modal-editors/modal-editors.png",
+      "link": "/announcements/modal-editors/",
+      "description": "Learn about modal text editors like Vim and Neovim",
+      "type": "announcement"
+    },
+    {
+      "id": "project-expo-2",
+      "title": "Project Expo 2.0",
+      "date": "Sept 2025", 
+      "image": "/static/images/gallery/project-expo-2/expo2.0.png",
+      "link": "/announcements/project-expo-2/",
+      "description": "Showcase of innovative student projects",
+      "type": "announcement"
+    },
+    {
+      "id": "fosstalks-2",
+      "title": "FOSS Talks 2.0",
+      "date": "February 2025",
+      "image": "https://i.imgur.com/7I8zaCy.png",
+      "link": "/announcements/fosstalks-2/",
+      "description": "Inspiring talks about Free and Open Source Software",
+      "type": "announcement"
+    },
+    {
+      "id": "tilde-4-ebpf",
+      "title": "Buzzing with eBPF",
+      "date": "Sept 2024",
+      "image": "https://i.imgur.com/51JRzZL.png",
+      "link": "/announcements/tilde-4.0/",
+      "description": "Introduction to eBPF",
+      "type": "announcement"
+    }
+  ],
+  "featured_videos": [
+    {
+      "id": "video-1",
+      "title": "Git up and Running",
+      "embedUrl": "https://www.youtube.com/embed/raQrUlURXEc",
+      "type": "youtube"
+    },
+    {
+      "id": "video-2", 
+      "title": "Fireside Talk with Madhav",
+      "embedUrl": "https://www.youtube.com/embed/rdO_nXb3i3c",
+      "type": "youtube"
+    },
+    {
+      "id": "video-3",
+      "title": "Tilde 4.0",
+      "embedUrl": "https://www.youtube.com/embed/as27j9Tt_FE",
+      "type": "youtube"
+    }
+  ],
+  "social_embeds": [
+    {
+      "id": "linkedin-post",
+      "type": "linkedin", 
+      "embedUrl": "https://www.linkedin.com/embed/feed/update/urn:li:activity:7278945323375337472",
+      "height": "665"
+    },
+    {
+      "id": "instagram-post",
+      "type": "instagram",
+      "permalink": "https://www.instagram.com/p/DCMTaliysuj/",
+      "caption": "HSP PESU-ECC community updates"
+    }
+  ],
+  "settings": {
+    "lazy_load": true,
+    "animation_duration": 300,
+    "intersection_margin": "100px",
+    "fade_in": true,
+    "error_retry": true
+  }
+}

@@ -1,54 +1,10 @@
-/* Color Scheme */
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --color-primary: #5990ac;
-        --color-primary-dim: #5990ac7f;
-        --color-text: #ffffff;
-        --color-text-dim: #ffffff7f;
-        --color-background: #000000;
-        --color-background-dim: #4a4a4a5a;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-primary: #5990ac;
-        --color-primary-dim: #5990ac7f;
-        --color-text: #000000;
-        --color-text-dim: #5a5a5a;
-        --color-background: #ffffff;
-        --color-background-dim: #a5a5a57f;
-    }
-} */
 
 :root {
     /* dimensions */
     --body-width: 60%;
 }
 
-/* @media (prefers-color-scheme: light) {
-    :root {
-        --color-heading: #000000;
-        --color-subheading: #606060;
 
-        --color-text: #10100ed0;
-        --color-text-dim: #58585870;
-        --color-text-low: #10100e20;
-
-        --color-background: #ffffff;
-        --color-background-dim: #b0b0b07a;
-        --color-background-low: #ffffff50;
-
-        --inline-code-bg: #161618;
-
-        --color-primary: #00fb6b;
-        --color-primary-dim: #00fb6b7f;
-        --inline-code-bg: #f9f8f9;
-
-    }
-} */
-
-@media (prefers-color-scheme: dark) {
     :root {
         --color-heading: #ffffff;
         --color-subheading: #a0a0a0;
@@ -61,16 +17,36 @@
         --color-background-dim: #2020207f;
         --color-background-low: #10100e50;
 
-        --inline-code-bg: #161618;
-
         --color-primary: #00fb6b;
         --color-primary-dim: #00fb6b7f;
         --inline-code-bg: #262628;
 
+        /* Code block colors for dark mode */
+        --code-bg: #1a1a1a;
+        --code-text: #e0e0e0;
+        --code-border: #404040;
+
         /* dimensions */
         --body-width: 45rem;
     }
-}
+
+    /* Image styling for dark mode */
+    img {
+        width: 100%;
+        border-radius: 8px;
+        margin: 1.5rem auto;
+        display: block;
+    }
+
+    /* Override for footer social icons - keep them inline */
+    footer img {
+        width: 24px !important;
+        height: 24px !important;
+        margin: 0 5px !important;
+        display: inline !important;
+        vertical-align: middle !important;
+        border-radius: 0 !important;
+    }
 
 /* @font-face {
     font-family: AzeretMono;
@@ -206,14 +182,6 @@ a {
     font-style: none;
     color: var(--color-primary);
     font-family: InterItalic;
-}
-
-img {
-    width: 100%;
-    border-radius: 8px;
-
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* ol,
@@ -352,16 +320,18 @@ q {
 }
 
 pre code {
-    color: var(--color-heading);
+    color: var(--code-text, var(--color-heading));
+    background-color: var(--code-bg, var(--color-background-dim)) !important;
+    border: 1px solid var(--code-border, var(--color-text-low));
     margin-top: 2rem;
     margin-bottom: 2rem;
 
     font-family: monospace;
-    /* background: ; */
     overflow-x: scroll;
     scrollbar-width: none;
     border-radius: 8px;
     font-size: 1.3rem;
+    padding: 1rem;
 }
 
 pre>code {
@@ -372,7 +342,9 @@ pre>code {
 }
 
 pre code.hljs {
-    color: var(--color-heading);
+    color: var(--code-text, var(--color-heading));
+    background-color: var(--code-bg, var(--color-background-dim)) !important;
+    border: 1px solid var(--code-border, var(--color-text-low));
     font-family: monospace;
     font-variant-ligatures: common-ligatures;
     font-feature-settings: "liga" on;
@@ -380,14 +352,9 @@ pre code.hljs {
     font-size: 0.9rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    /* padding: 0.5rem; */
+    border-radius: 8px;
 }
 
-/*.hljs-copy-wrapper {*/
-/* margin: 0; */
-/* margin-top: 0.2rem; */
-/* margin-bottom: 0.2rem; */
-/*}*/
 
 p>code,
 li>code,
@@ -411,46 +378,3 @@ a>code {
     border-radius: 4px;
     font-size: 0.9rem;
 }
-
-/* details {
-    /*margin-top: 1rem;*/
-color: var(--color-subheading);
-font-size: 0.95rem;
-font-family: Inter,
-sans-serif;
-font-weight: 550;
-user-select: none;
--webkit-user-select: none;
-
-transition: padding 300ms ease-in-out,
-background-color 300ms ease-in-out;
-
-&>ul,
-&>ol {
-    font-weight: 350;
-    font-size: 1rem;
-    /* margin-left: 2rem; */
-}
-}
-
-sumamry {
-    color: var(--color-heading);
-    font-weight: 500;
-    opacity: 1;
-    font-size: 1.5rem;
-}
-
-details>img {
-    width: 70%;
-}
-
-details {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-details>details {
-    margin-left: 1rem;
-}
-
-*/
