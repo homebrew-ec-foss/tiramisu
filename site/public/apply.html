@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>HSP Recruitments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+    body {
+      background-color: #000;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 10px;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 4vw;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .header {
+      background-color: #000;
+      padding: 2vw 3vw;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 3vw;
+      max-width: 95%;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 12vw;
+      height: 12vw;
+      min-width: 60px;
+      min-height: 60px;
+      flex-shrink: 0;
+    }
+
+    .ticker-wrapper {
+      position: relative;
+      height: 12vw;
+      min-height: 60px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0));
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0));
+      mask-repeat: no-repeat;
+      mask-size: 100% 100%;
+      flex-grow: 1;
+    }
+
+    .ticker {
+      text-align: left;
+      font-size: 5vw;
+      font-weight: 700;
+      line-height: 1.2;
+      transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .ticker span {
+      display: block;
+      color: #fff;
+      font-size: 4vw;
+      opacity: 0.3;
+      transition: color 0.6s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .ticker .current {
+      font-size: 5vw;
+      opacity: 1;
+      color: #fff;
+    }
+
+    .apply-button {
+      background-color: #00fb6b;
+      color: #000;
+      font-family: 'Inter', sans-serif;
+      padding: 10px 20px;
+      font-size: 1.5vw;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .apply-button.highlight {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00fb6b;
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from {
+        box-shadow: 0 0 20px #00fb6b;
+      }
+
+      to {
+        box-shadow: 0 0 40px #00fb6b;
+      }
+    }
+
+    .apply-button:hover {
+      background-color: #00d35a;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 9vw;
+        margin: 5px 0;
+      }
+
+      .header {
+        flex-direction: column;
+        padding: 4vw 4vw;
+        gap: 3vw;
+      }
+
+      .logo {
+        width: 40vw;
+        height: 40vw;
+      }
+
+      .ticker-wrapper {
+        height: 35vw;
+        width: 100%;
+      }
+
+      .ticker {
+        font-size: 10vw;
+      }
+
+      .ticker span {
+        font-size: 7vw;
+      }
+
+      .ticker .current {
+        font-size: 10vw;
+      }
+
+      .apply-button {
+        font-size: 5vw;
+        padding: 15px 30px;
+        margin-top: 15px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Recruitments Open</h1>
+
+  <div class="header">
+    <img src="/static/images/hsp-spinner.svg" alt="HSP Logo" class="logo">
+    <div class="ticker-wrapper">
+      <div class="ticker" id="ticker">
+        <span id="prev">21'</span>
+        <span id="current" class="current">21'</span>
+        <span id="next">22'</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScWbUWZWnNDEdjZG8BERfaofwWdBLF3w7JGrUIu4kF123Vnwg/viewform"
+    class="apply-button" id="applyButton">Apply Now</a>
+
+  <audio id="tickSound" src="/static/sounds/tick.mp3" preload="auto"></audio>
+
+  <script>
+    const prev = document.getElementById("prev");
+    const current = document.getElementById("current");
+    const next = document.getElementById("next");
+    const applyButton = document.getElementById("applyButton");
+    const tickSound = document.getElementById("tickSound");
+
+    const min = 20;
+    const max = 26;
+    let currentNumber = 21;
+
+    function getWrappedNumber(num) {
+      let range = max - min + 1;
+      return ((num - min + range) % range) + min;
+    }
+
+    function fadeOutAudio(audio, duration = 500) {
+      if (!audio) return;
+      const step = 50; // milliseconds
+      const volumeStep = audio.volume / (duration / step);
+      const fadeInterval = setInterval(() => {
+        audio.volume -= volumeStep;
+        if (audio.volume <= 0) {
+          audio.pause();
+          audio.currentTime = 0;
+          audio.volume = 1.0; // reset for next use
+          clearInterval(fadeInterval);
+        }
+      }, step);
+    }
+
+    function updateTicker() {
+      if (currentNumber >= 26) {
+        // smooth stop
+        fadeOutAudio(tickSound);
+
+        // highlight and redirect
+        applyButton.classList.add('highlight');
+        setTimeout(() => {
+          applyButton.click();
+        }, 1000);
+        return;
+      }
+
+      currentNumber = getWrappedNumber(currentNumber + 1);
+      prev.textContent = getWrappedNumber(currentNumber - 1) + "'";
+      current.textContent = currentNumber + "'";
+      next.textContent = getWrappedNumber(currentNumber + 1) + "'";
+
+      if (tickSound) {
+        tickSound.currentTime = 0;
+        tickSound.play().catch(() => { });
+      }
+    }
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        setInterval(updateTicker, 1000);
+      }, 250); // short delay for page load
+    });
+  </script>
+
+</body>
+
+</html>
