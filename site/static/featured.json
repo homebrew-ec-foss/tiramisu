@@ -45,15 +45,21 @@
       "type": "youtube"
     },
     {
-      "id": "video-2", 
+      "id": "video-2",
+      "title": "Tilde 4.0",
+      "embedUrl": "https://www.youtube.com/embed/as27j9Tt_FE",
+      "type": "youtube"
+    },
+    {
+      "id": "video-3", 
       "title": "Fireside Talk with Madhav",
       "embedUrl": "https://www.youtube.com/embed/rdO_nXb3i3c",
       "type": "youtube"
     },
     {
-      "id": "video-3",
-      "title": "Tilde 4.0",
-      "embedUrl": "https://www.youtube.com/embed/as27j9Tt_FE",
+      "id": "video-4",
+      "title": "Modal Editors",
+      "embedUrl": "https://www.youtube.com/embed/21_o11RJH4M",
       "type": "youtube"
     }
   ],
