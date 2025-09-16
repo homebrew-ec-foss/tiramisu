@@ -188,7 +188,8 @@
     const current = document.getElementById("current");
     const next = document.getElementById("next");
     const applyButton = document.getElementById("applyButton");
-    const tickSound = document.getElementById("tickSound");
+  const tickSound = document.getElementById("tickSound");
+  let tickerInterval = null;
 
     const min = 20;
     const max = 26;
@@ -221,8 +222,22 @@
 
         // highlight and redirect
         applyButton.classList.add('highlight');
+
+        // stop the interval so the ticker doesn't keep running
+        if (tickerInterval !== null) {
+          clearInterval(tickerInterval);
+          tickerInterval = null;
+        }
+
+        // use a direct navigation instead of programmatic click which some
+        // browsers may block when not triggered by a user gesture
         setTimeout(() => {
-          applyButton.click();
+          try {
+            window.location.assign(applyButton.href);
+          } catch (e) {
+            // fallback to setting location
+            window.location.href = applyButton.href;
+          }
         }, 1000);
         return;
       }
@@ -240,7 +255,7 @@
 
     window.addEventListener('load', () => {
       setTimeout(() => {
-        setInterval(updateTicker, 1000);
+        tickerInterval = setInterval(updateTicker, 1000);
       }, 250); // short delay for page load
     });
   </script>
