@@ -1,2 +1,59 @@
 {
+  "club-recruitments-26": {
+    "title": "Club Recruitments",
+    "displayName": "Applications",
+    "spinner": "/static/images/hsp-spinner.svg",
+    "poster": "/static/images/gallery/blob/blob-beanie.svg",
+    "gsheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vRra1pnMmNz2yFE0f4cclrMzJwx3abGFJwzytk1S-YLy5RuNzndILiii_omi8jCH-rIN_UBGIWh3zFh/pub?gid=1710563671&single=true&output=csv",
+    "dataColumn": 0,
+    "updateInterval": 10000,
+    "active": true,
+    "colors": {
+      "primary": "#00fb6b",
+      "primaryAlpha": "rgba(0, 251, 107, 0.8)",
+      "primaryIntense": "rgba(0, 251, 107, 1)",
+      "background": "rgba(0, 0, 0, 0.95)",
+      "border": "rgba(0, 251, 107, 0.4)",
+      "glow": "rgba(0, 251, 107, 0.3)",
+      "glowIntense": "rgba(0, 251, 107, 0.5)"
+    }
+  },
+  "modal-editors": {
+    "title": "Modal Editors",
+    "displayName": "Event Registrations",
+    "spinner": "/static/images/hsp-spinner.svg",
+    "poster": "/static/images/gallery/modal-editors/modal-editors.png",
+    "gsheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS4z0LapDAjdrUiZGP2B7VrQJrgekKQsIFsORijdBC7j9nWZB4K8KKnI2dbnOS9YwkKREXOQZAwSO-h/pub?gid=482998302&single=true&output=csv",
+    "dataColumn": 0,
+    "updateInterval": 5000,
+    "active": true,
+    "colors": {
+      "primary": "#00fb6b",
+      "primaryAlpha": "rgba(0, 251, 107, 0.8)",
+      "primaryIntense": "rgba(0, 251, 107, 1)",
+      "background": "rgba(0, 0, 0, 0.95)",
+      "border": "rgba(0, 251, 107, 0.4)",
+      "glow": "rgba(0, 251, 107, 0.3)",
+      "glowIntense": "rgba(0, 251, 107, 0.5)"
+    }
+  },
+  "project-expo-2": {
+    "title": "Project Expo 2.0",
+    "displayName": "Event Registrations",
+    "spinner": "/static/images/hsp-spinner.svg",
+    "poster": "/static/images/gallery/project-expo-2/expo2.0.png",
+    "gsheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTECbMuUivrQd0W2W1B2GnPLqgOjF0IxDZ83sQYrBX-5qVsQtd8zx-cPBjr2jluuv-uV6J2BGirG1Id/pub?gid=1889036144&single=true&output=csv",
+    "dataColumn": 0,
+    "updateInterval": 5000,
+    "active": true,
+    "colors": {
+      "primary": "#00fb6b",
+      "primaryAlpha": "rgba(0, 251, 107, 0.8)",
+      "primaryIntense": "rgba(0, 251, 107, 1)",
+      "background": "rgba(0, 0, 0, 0.95)",
+      "border": "rgba(0, 251, 107, 0.4)",
+      "glow": "rgba(0, 251, 107, 0.3)",
+      "glowIntense": "rgba(0, 251, 107, 0.5)"
+    }
+  }
 }

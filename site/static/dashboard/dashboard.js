@@ -179,7 +179,7 @@ class DashboardManager {
         banner.className = 'banner-floating';
 
         const img = document.createElement('img');
-        img.src = event.poster || "/static/images/gallery/project-expo-2/expo2.0.png";
+        img.src = event.poster || "/static/images/gallery/blob/blob-beanie.svg";
         img.style.width = '45px';
         img.style.height = '45px';
         img.style.objectFit = 'cover';
@@ -204,7 +204,7 @@ class DashboardManager {
         const dashboardText = document.createElement('div');
         dashboardText.textContent = "Dashboard";
         dashboardText.style.fontWeight = 'bold';
-        dashboardText.style.fontSize = '13px';
+        dashboardText.style.fontSize = '12px';
         textContainer.appendChild(dashboardText);
         
         banner.appendChild(textContainer);

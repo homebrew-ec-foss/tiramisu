@@ -16,7 +16,7 @@
     <script>
         // Get event ID from URL parameters
         const urlParams = new URLSearchParams(window.location.search);
-        const eventId = urlParams.get('event') || 'project-expo-2'; // Default event
+        const eventId = urlParams.get('event'); // Default event
 
         // Initialize dashboard
         const dashboard = new DashboardManager();
