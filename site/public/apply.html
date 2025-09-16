@@ -161,7 +161,6 @@
       }
     }
   </style>
-
 </head>
 
 <body>
@@ -181,15 +180,15 @@
   <a href="https://docs.google.com/forms/d/e/1FAIpQLScWbUWZWnNDEdjZG8BERfaofwWdBLF3w7JGrUIu4kF123Vnwg/viewform"
     class="apply-button" id="applyButton">Apply Now</a>
 
-  <audio id="tickSound" src="/static/sounds/tick.mp3" preload="auto"></audio>
+  <audio id="tickSound" src="/static/sounds/tick.mp3" preload="auto" autoplay muted></audio>
 
   <script>
     const prev = document.getElementById("prev");
     const current = document.getElementById("current");
     const next = document.getElementById("next");
     const applyButton = document.getElementById("applyButton");
-  const tickSound = document.getElementById("tickSound");
-  let tickerInterval = null;
+    const tickSound = document.getElementById("tickSound");
+    let tickerInterval = null;
 
     const min = 20;
     const max = 26;
@@ -202,14 +201,14 @@
 
     function fadeOutAudio(audio, duration = 500) {
       if (!audio) return;
-      const step = 50; // milliseconds
+      const step = 50;
       const volumeStep = audio.volume / (duration / step);
       const fadeInterval = setInterval(() => {
         audio.volume -= volumeStep;
         if (audio.volume <= 0) {
           audio.pause();
           audio.currentTime = 0;
-          audio.volume = 1.0; // reset for next use
+          audio.volume = 1.0;
           clearInterval(fadeInterval);
         }
       }, step);
@@ -217,31 +216,21 @@
 
     function updateTicker() {
       if (currentNumber >= 26) {
-        // smooth stop
         fadeOutAudio(tickSound);
-
-        // highlight and redirect
         applyButton.classList.add('highlight');
-
-        // stop the interval so the ticker doesn't keep running
         if (tickerInterval !== null) {
           clearInterval(tickerInterval);
           tickerInterval = null;
         }
-
-        // use a direct navigation instead of programmatic click which some
-        // browsers may block when not triggered by a user gesture
         setTimeout(() => {
           try {
             window.location.assign(applyButton.href);
           } catch (e) {
-            // fallback to setting location
             window.location.href = applyButton.href;
           }
         }, 1000);
         return;
       }
-
       currentNumber = getWrappedNumber(currentNumber + 1);
       prev.textContent = getWrappedNumber(currentNumber - 1) + "'";
       current.textContent = currentNumber + "'";
@@ -254,12 +243,18 @@
     }
 
     window.addEventListener('load', () => {
-      setTimeout(() => {
-        tickerInterval = setInterval(updateTicker, 1000);
-      }, 250); // short delay for page load
+      // Try to play and unmute after load
+      tickSound.play().then(() => {
+        setTimeout(() => {
+          tickSound.muted = false;
+        }, 100); // short delay before unmuting
+      }).catch((e) => {
+        console.log("Playback blocked:", e);
+      });
+
+      tickerInterval = setInterval(updateTicker, 1000);
     });
   </script>
-
 </body>
 
 </html>
