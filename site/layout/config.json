@@ -24,7 +24,7 @@
   ],
   "baseURL": "https://hsp-ec.xyz",
   "siteTitle": "HSP",
-  "siteScripts": ["hamburger.js"],
+  "siteScripts": ["hamburger.js", "posthog.js"],
   "author": "HSP",
   "themeURL": "/static/styles/default_imports.css",
   "copyright": "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.",
