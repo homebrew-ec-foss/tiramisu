@@ -30,7 +30,7 @@
                         <div class="socials-links">
                         {{ range $linkMap := .Frontmatter.CustomFields }}
                             {{ range $namedURL, $URL := $linkMap }}
-                                <a href="{{$URL}}"><img class="social-links-icon"  src="/static/icons/{{$namedURL}}.svg"></a >
+                                <a href="{{$URL}}" target="_blank" rel="noopener noreferrer"><img class="social-links-icon"  src="/static/icons/{{$namedURL}}.svg"></a >
                             {{end}}
                         {{end}}
                         </div>
