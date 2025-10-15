@@ -1,5 +1,5 @@
 ---
-title: Neeaj R Rugi
+title: Neeraj R Rugi
 description: Member
 collections: ["members>2026"]
 tags: ["member"]
