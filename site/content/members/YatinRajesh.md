@@ -1,7 +1,7 @@
 ---
 title: Yatin Rajesh
 description: Member
-collections: ["members>2025"]
+collections: ["members>2026"]
 tags: ["Mentee"]
 previewimage: "site/static/images/members/YatinRajesh.jpg"
 customFields:

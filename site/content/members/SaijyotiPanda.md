@@ -1,7 +1,7 @@
 ---
 title: Saijyoti Panda
 description: Member
-collections: ["members>2025", "members>2026"]
+collections: ["members>2026"]
 tags: ["member"]
 previewimage: /static/images/members/Saijyoti_Panda.jpg
 customFields:
