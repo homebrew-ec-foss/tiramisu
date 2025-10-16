@@ -5,7 +5,6 @@
     * [Guide for members list](#guide-for-members-list)
     * [Guide for design posts](#guide-for-design-posts)
 
-
 ## Contribution Guide
 
 To make yourselves familiar with the [static site generator](https://en.wikipedia.org/wiki/Static_site_generator),
@@ -25,7 +24,6 @@ The easiest way to setup git and ssh is to use the official `gh-cli` app
 4. Follow the prompts. Select `SSH` as the preferred option and let it generate an SSH key.
 6. Visit: https://github.com/homebrew-ec-foss/tiramisu/ and fork this repo
 5. To test, clone the forked repo using `gh repo clone yourusername/tiramisu`
-
 
 ---
 
@@ -51,18 +49,6 @@ To add your name to the list of members section of the site, follow these steps
 Make a copy of the sample `FirstLastName.md.example` `markdown` file to
 `site/content/members`.
 
-For example:
-
-```yaml
----
-title: Your Name
-description: Member
-collections: ["members>2025", "design_team"]
-tags: ["design"]
-customFields:
-    - Github: https://github.com/username
----
-```
 **Note**
 
 `SocialsName` could either be `Linkedin`, `Github`, `Instagram`, `X`, etc. If
@@ -74,9 +60,7 @@ Feel free to look at the other member's `.md` posts for ref.
 
 ---
 
-### Guide for design posts
-
-> This is only for HSP Members
+### Guide for posts
 
 -   Any small writeup on the inspiration, thought process behind the designs would be appreciated
 -   Design posts can be added under `site/content/design/EVENT_NAME.md` and must follow the following frontmatter template
