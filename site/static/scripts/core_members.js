@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                         var social_icon = document.createElement("img");
                         social_icon.className = "social-links-icon";
-                        social_icon.src = `/static/icons/${linkType.toLowerCase()}.svg`;
+                        social_icon.src = `/static/icons/${linkType}.svg`;
                         social_icon.alt = linkType;
 
                         anchor_tag.appendChild(social_icon);
