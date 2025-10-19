@@ -1,12 +1,13 @@
 ---
-title: blobby blob
+title: Ananya Abhilash
 description: Member
 collections: ["members>2026"]
-tags: ["markerting, memes, mascot"]
-previewimage: "https://github.com/username.png"
+tags: ["members"]
+previewimage: "https://github.com/twilightily.png"
 customFields:
-    - Github: https://github.com/username
-    - Linkedin: https://www.linkedin.com/in/example
+    - Github: https://github.com/twilightily
+    - Linkedin: https://linkedin.com/in/ananyaabhilash11
+    - Email: "mailto:ananyaabhilash11@gmail.com"
 ---
 
-Add Something about yourself :D
+
