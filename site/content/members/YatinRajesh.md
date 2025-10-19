@@ -8,5 +8,4 @@ customFields:
     - Linkedin: https://www.linkedin.com/in/yatin-rajesh-8a8aa1202/
     - Instagram: https://www.instagram.com/yatin_r007
     - Github: https://github.com/T1n777
-
 ---

@@ -1,6 +1,6 @@
 ---
 title: Pranav M
-description:  Marketing Team
+description: Member
 collections: ["members>2025", "marketing_team"]
 tags: ["marketer"]
 previewimage: /static/images/members/PranavM.jpg
