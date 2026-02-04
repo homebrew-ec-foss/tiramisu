@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firesides - Homebrew FOSS</title>
+
+    <link rel="preload stylesheet" href="/static/styles/default_imports.css" as="style" />
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
+
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+    <script src="/static/scripts/title_tag.js"></script>
+    <script src="/static/scripts/hamburger.js" defer></script>
+
+    <style>
+        .firesides-page {
+            max-width: none;
+            width: 100%;
+        }
+
+        .firesides-container {
+            max-width: 1280px;
+            margin: 2.25rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.6rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-heading);
+        }
+
+        .page-header p {
+            color: var(--color-subheading);
+            font-size: 1.15rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 4rem;
+            color: var(--color-subheading);
+        }
+
+        .error {
+            text-align: center;
+            padding: 4rem;
+            color: #ff6b6b;
+        }
+
+        #firesides-content {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(320px, 1fr));
+            gap: 2.25rem;
+        }
+
+        .fireside-card {
+            background: var(--color-background-dim);
+            border: 1px solid var(--color-background-low);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 0;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .fireside-card:hover {
+            border-color: var(--color-primary-dim);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .fireside-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 2.5rem;
+            gap: 1rem;
+        }
+
+        .fireside-title {
+            font-size: 2rem;
+            color: var(--color-heading);
+            margin: 0 0 0.75rem 0;
+            line-height: 1.2;
+        }
+
+        .fireside-title a {
+            color: var(--color-heading);
+            text-decoration: none;
+        }
+
+        .fireside-title a:hover {
+            color: var(--color-primary);
+        }
+
+        .fireside-meta {
+            display: flex;
+            gap: 2rem;
+            color: var(--color-subheading);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .fireside-meta .author {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .fireside-meta .date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .fireside-body {
+            color: var(--color-text);
+            line-height: 1.6;
+            margin-top: 0;
+            clear: both;
+        }
+
+        .youtube-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 0 0 2rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 251, 107, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: #000;
+        }
+
+        .youtube-embed:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 251, 107, 0.2);
+        }
+
+        .youtube-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .fireside-body .youtube-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 0 0 2rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 251, 107, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .fireside-body .youtube-embed:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 251, 107, 0.2);
+        }
+
+        .fireside-body .youtube-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .fireside-body p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .fireside-body p:first-child {
+            margin-top: 0;
+        }
+
+        .fireside-body ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .fireside-body blockquote {
+            border-left: 3px solid var(--color-primary);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            color: var(--color-subheading);
+            font-style: italic;
+        }
+
+        .fireside-body iframe {
+            border-radius: 12px;
+        }
+
+        .fireside-body code {
+            background: var(--inline-code-bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .fireside-body pre {
+            background: var(--code-bg);
+            border: 1px solid var(--code-border);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        .fireside-body pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .fireside-body h3 {
+            color: var(--color-heading);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .fireside-body a {
+            transition: color 0.2s ease;
+        }
+
+        .fireside-body a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .fireside-body a:hover {
+            text-decoration: underline;
+        }
+
+        .fireside-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--color-background-low);
+            color: var(--color-subheading);
+            font-size: 0.9rem;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            background: var(--color-primary-dim);
+            color: var(--color-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 1100px) {
+            #firesides-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .firesides-container {
+                padding: 0 0.75rem;
+            }
+
+            #firesides-content {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.9rem;
+            }
+
+            .fireside-card {
+                padding: 1.15rem;
+            }
+
+            .fireside-title {
+                font-size: 1.45rem;
+            }
+
+            .fireside-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .fireside-stats {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/">
+                <img loading="lazy" class="hsp-logo" src="/static/images/hsp-spinner.svg" />
+            </a>
+            <div id="links" class="links">
+                <a class="navitem" href="/about">About</a>
+                <a class="navitem" href="/announcements">Announcements</a>
+                <a class="navitem" href="/members">Members</a>
+                <a class="navitem" href="/gallery">Gallery</a>
+            </div>
+            <div id="menu_icon" class="closed">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#e8eaed">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container firesides-page">
+        <div class="firesides-container">
+            <div class="page-header">
+                <h1>Firesides 🔥</h1>
+                <p>Conversations, insights, and lessons from the community</p>
+            </div>
+        </div>
+
+        <div id="firesides-content" class="loading">
+            Loading firesides...
+        </div>
+
+        <div id="proposals" style="margin: 4rem 0 2rem 0; padding: 0 1.5rem;">
+            <h2>🔥 Fireside CFPs</h2>
+            <p>
+                Visit: <a href="https://hsp-ec.xyz/cfp-firesides">https://hsp-ec.xyz/cfp-firesides</a>
+
+            </p>
+            Alternatively, drop your proposals here as comments for us to make note of and triage them!
+            <script src="https://giscus.app/client.js" data-repo="homebrew-ec-foss/tiramisu" data-repo-id="R_kgDOMNKKDw"
+                data-category="Firesides" data-category-id="DIC_kwDOMNKKD84Cl_Wo" data-mapping="pathname"
+                data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
+                data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
+                </script>
+        </div>
+    </div>
+
+    <footer>
+        <div style="text-align: center;">
+            <p style="margin-top:2rem;">Follow us on our socials!
+                <a href="https://github.com/homebrew-ec-foss" style="margin: 0 5px;">
+                    <img src="/static/icons/Github.svg" alt="GitHub"
+                        style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://x.com/hsp_ecc" style="margin: 0 5px;">
+                    <img src="/static/icons/X.svg" alt="Twitter"
+                        style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://www.instagram.com/hsp.pesuecc/" style="margin: 0 5px;">
+                    <img src="/static/icons/Instagram.svg" alt="Instagram"
+                        style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+                <a href="https://in.linkedin.com/company/hsp-pesu-ecc" style="margin: 0 5px;">
+                    <img src="/static/icons/Linkedin.svg" alt="LinkedIn"
+                        style="width: 24px; height: 24px; vertical-align: middle;">
+                </a>
+            </p>
+            <p>Rendered using <a href="https://github.com/anna-ssg/anna">anna</a> ❤️</p>
+        </div>
+    </footer>
+
+    <script src="/static/scripts/firesides.js"></script>
+</body>
+
+</html>

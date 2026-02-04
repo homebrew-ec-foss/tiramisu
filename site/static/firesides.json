@@ -1,0 +1,82 @@
+[
+    {
+        "id": 90,
+        "title": "Non Linear Principle Component Analysis using ANNs",
+        "author": {
+            "login": "prabodhbharadwaj1211-bit",
+            "html_url": "https://github.com/prabodhbharadwaj1211-bit"
+        },
+        "created_at": "2026-02-02T01:40:00Z",
+        "html_url": "https://github.com/orgs/homebrew-ec-foss/discussions/90",
+        "body": "An overview on NLCPAs, how they work and where they are used.",
+        "youtubeId": "eTsNtSnOP7U",
+        "comments": 0,
+        "reactions": {
+            "+1": 0
+        }
+    },
+    {
+        "id": 89,
+        "title": "Laws of UX",
+        "author": {
+            "login": "twilightily",
+            "html_url": "https://github.com/twilightily"
+        },
+        "created_at": "2026-02-01T01:20:00Z",
+        "html_url": "https://github.com/orgs/homebrew-ec-foss/discussions/89",
+        "youtubeId": "UETijp3eaIM",
+        "body": "This is a fireside about a few of the laws of UX! They're general conventions that shape the design of user interface of any application and were formulated by researchers through profound study of human behavior i.e. user experience.The great thing about these laws however is that they aren't confined to just UIs. We see this concept very well in the fireside.",
+        "comments": 0,
+        "reactions": {
+            "+1": 0
+        }
+    },
+    {
+        "id": 88,
+        "title": "Websocketing! - A Handshake into Seamless Real-Time Connection",
+        "author": {
+            "login": "AkagamiShankz007",
+            "html_url": "https://github.com/AkagamiShankz007"
+        },
+        "created_at": "2026-01-29T02:28:00Z",
+        "html_url": "https://github.com/orgs/homebrew-ec-foss/discussions/88",
+        "youtubeId": "8o7w_h_qtbU",
+        "body": "Today at the 3rd session of Firesides by HSP, We dive into the depths of Web-socketing!\n\nGetting in touch with the History behind the existence of Web sockets and how they aid in Real-Time communication in today's world.\n\nA comparison: HTTP and Websockets - same? different? who's the better of the latter!Websocket applications and popularly used libraries like Socket.io and WebRTC",
+        "comments": 0,
+        "reactions": {
+            "+1": 0
+        }
+    },
+    {
+        "id": 87,
+        "title": "Open Source Mapping w/ OSM & Building Indic Dictionaries",
+        "author": {
+            "login": "thisisselva18",
+            "html_url": "https://github.com/thisisselva18"
+        },
+        "created_at": "2026-01-22T03:43:00Z",
+        "html_url": "https://github.com/orgs/homebrew-ec-foss/discussions/87",
+        "youtubeId": "fTt-6upHbwg",
+        "body": "In this 2nd Fireside session for HSP '26 in collaboration with ACM PESUECC, @thisisselva18 discusses about Open Source Mapping and how mapping platforms powered by OpenStreetMap could be a worthy alternative to proprietary mapping platforms available on the internet, giving users and its contributors the flexibility of customizing map features at their own will.\n\nSarah Kazi from ACM PESUECC talks about Indic Dictionaries and existing solutions like Olam, Alar and Dictpress. It revolves around everything leading up to it and the algorithms used to make them specifically tailored to Indian languages. The talk also deals with the reasoning behind the latest update in Dictpress which is a complete switch from Go to Rust. Lastly, it also includes the areas that have scope for future enhancements and how everyone who's interested in it could go ahead and make amazing contributions.\n\nCheck out the slide decks here!",
+        "comments": 0,
+        "reactions": {
+            "+1": 0
+        }
+    },
+    {
+        "id": 86,
+        "title": "Lessons from Adopting AI: A case study",
+        "author": {
+            "login": "andy34G7",
+            "html_url": "https://github.com/andy34g7"
+        },
+        "created_at": "2026-01-08T01:46:00Z",
+        "html_url": "https://github.com/orgs/homebrew-ec-foss/discussions/86",
+        "youtubeId": "0NFRTCPBmgk",
+        "body": "In this first Fireside session for HSP '26, @Andy34G7 shares real-world lessons from adopting AI in practice. From experimentation to real world impact, this session dives into what worked, what didn't, and the key takeaways for people looking to integrate AI into their workflows.\n\nWhether you're a student, builder, or professional curious about applying AI beyond the hype, this fireside chat offers practical insights from projects around the world.",
+        "comments": 0,
+        "reactions": {
+            "+1": 0
+        }
+    }
+]
