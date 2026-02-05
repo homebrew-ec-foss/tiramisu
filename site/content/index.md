@@ -24,26 +24,29 @@ fostering a culture of knowledge sharing. Today, our community has blossomed
 into a thriving family of over a 100 members, united by a shared passion for
 learning, innovation, and collaboration!
 
+
+
 ## But what is FOSS?
 
 In contrast to proprietary software, <span style="color:#00fb6b; font-style:italic;">Free and Open Source Software</span> or FOSS is open for all to study, use, modify and redistribute under an open-source license. A good example is <a href="https://github.com/anna-ssg/anna">anna</a>, a lightning-fast static site generator developed by our members that powers this very website! ⚡
 
 To learn more about FOSS, check out <a href="https://homebrew.hsp-ec.xyz">Homebrew</a> - our very own FOSS wing that's open to all open-source enthusiasts! ♥️
 
-<!--
-## Links
--->
 
-<!-- <div class="home-nav">
+## What We Do
 
-[Homebrew FOSS by HSP PESUECC](https://homebrew.hsp-ec.xyz/)
+<div class="home-nav">
 
-[Instagram](https://www.instagram.com/hsp.pesuecc/)
 
-[LinkedIn](https://www.linkedin.com/company/hsp-pesu-ecc/)
+**[Firesides](/firesides) 🔥** Fireside chats where community members share insights, lessons learned, and real-world experiences on FOSS, technology, and innovation.
 
-[X](https://x.com/hsp_ecc)
+**[Workshops](/announcements)** — Hands-on sessions and technical talks covering everything from Git workflows to advanced FOSS concepts
 
-[YouTube](https://www.youtube.com/channel/UCtFFsoFIBV0udCCf6ryNFAQ)
+**[FOSS Talks](/announcements/fosstalks-2)** — A curated series where speakers dive deep into open-source projects and 
+community-driven development.
 
-</div> -->
+**[Homebrew](https://homebrew.hsp-ec.xyz)** — Our FOSS Wing, where members contribute to open-source projects 
+
+**[Members](/collections/members)** — The people who make HSP PESUECC what it is
+
+</div>
