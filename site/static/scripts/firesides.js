@@ -99,74 +99,52 @@ function parseMarkdown(text) {
     return html;
 }
 
-// Create HTML for a fireside discussion card
-function createFiresideCard(discussion) {
+// Create list card HTML for a fireside (mobile-first, stacked layout)
+function createFiresideRow(discussion) {
     const formattedDate = formatDate(discussion.created_at);
 
-    // Get comment count and reactions
-    const commentCount = discussion.comments || 0;
-    const reactions = discussion.reactions || {};
-    const upvotes = reactions['+1'] || 0;
-
-    // Parse markdown body for description
+    // Parse markdown body for description and derive a short plain-text excerpt
     const parsedBody = parseMarkdown(discussion.body || '');
+    const plainText = parsedBody.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    const shortDesc = plainText.length > 240 ? `${plainText.slice(0, 240).trim()}…` : plainText;
+
+    // determine video id (use provided or extract from body)
+    const videoId = discussion.youtubeId || getYouTubeId(discussion.body || '') || '';
+    const thumbUrl = videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : '';
+
+    // link to YouTube if we have a video id, otherwise fall back to discussion
+    const youtubeUrl = videoId ? `https://youtu.be/${videoId}` : discussion.html_url;
 
     return `
-        <div class="fireside-card">
-            <div class="fireside-header">
-                <div>
-                    <h2 class="fireside-title">
-                        <a href="${discussion.html_url}" target="_blank" rel="noopener noreferrer">
-                            ${discussion.title}
-                        </a>
-                    </h2>
-                    <div class="fireside-meta">
-                        <div class="author">
-                            <span>by</span>
-                            <a href="${discussion.author.html_url}" target="_blank" rel="noopener noreferrer">
-                                @${discussion.author.login}
-                            </a>
+        <article class="fireside-card" role="article">
+            <div class="fireside-thumb">
+                ${videoId ? `
+                    <a class="thumb-link" href="${youtubeUrl}" target="_blank" rel="noopener noreferrer">
+                        <div class="thumb-wrapper">
+                            <img src="${thumbUrl}" alt="${discussion.title}" />
                         </div>
-                        <div class="date">
-                            <span>📅</span>
-                            <span>${formattedDate}</span>
-                        </div>
-                    </div>
-                </div>
-                <span class="badge">Fireside</span>
-            </div>
-            
-            ${discussion.youtubeId ? `
-            <div class="youtube-embed">
-                <iframe 
-                    src="https://www.youtube.com/embed/${discussion.youtubeId}" 
-                    title="${discussion.title}"
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-            ` : ''}
-            
-            <div class="fireside-body">
-                ${parsedBody}
-            </div>
-            
-            <div class="fireside-stats">
-                <div class="stat-item">
-                    <span>👍</span>
-                    <span>${upvotes} upvotes</span>
-                </div>
-                <div class="stat-item">
-                    <span>💬</span>
-                    <span>${commentCount} comments</span>
-                </div>
-                <div class="stat-item">
-                    <a href="${discussion.html_url}" target="_blank" rel="noopener noreferrer">
-                        View full discussion →
                     </a>
-                </div>
+                ` : ``}
             </div>
+
+            <div class="fireside-body">
+                <h3 class="fireside-title">${videoId ? `<a href="${youtubeUrl}" target="_blank" rel="noopener noreferrer">${discussion.title}</a>` : discussion.title}</h3>
+                <div class="channel-row">
+                    <div class="channel-name"><a href="${discussion.author.html_url}" target="_blank">@${discussion.author.login}</a></div>
+                    <div class="channel-meta">· ${formattedDate}</div>
+                </div>
+                <p class="desc-text">${shortDesc}</p>
+                <div class="desc-links"><a class="view-link" href="${discussion.html_url}" target="_blank" rel="noopener noreferrer">View discussion →</a></div>
+            </div>
+        </article>
+    `;
+}
+
+function renderFiresidesTable(firesides) {
+    const rows = firesides.map(d => createFiresideRow(d)).join('');
+    return `
+        <div class="fireside-list">
+            ${rows}
         </div>
     `;
 }
@@ -193,9 +171,8 @@ async function fetchFiresides() {
             return;
         }
 
-        // Render all fireside cards
-        const cardsHTML = firesides.map(discussion => createFiresideCard(discussion)).join('');
-        contentDiv.innerHTML = cardsHTML;
+        // Render firesides as a compact table
+        contentDiv.innerHTML = renderFiresidesTable(firesides);
 
     } catch (error) {
         console.error('Error fetching firesides:', error);

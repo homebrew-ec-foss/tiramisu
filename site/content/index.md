@@ -24,8 +24,6 @@ fostering a culture of knowledge sharing. Today, our community has blossomed
 into a thriving family of over a 100 members, united by a shared passion for
 learning, innovation, and collaboration!
 
-
-
 ## But what is FOSS?
 
 In contrast to proprietary software, <span style="color:#00fb6b; font-style:italic;">Free and Open Source Software</span> or FOSS is open for all to study, use, modify and redistribute under an open-source license. A good example is <a href="https://github.com/anna-ssg/anna">anna</a>, a lightning-fast static site generator developed by our members that powers this very website! ⚡
@@ -36,7 +34,6 @@ To learn more about FOSS, check out <a href="https://homebrew.hsp-ec.xyz">Homebr
 ## What We Do
 
 <div class="home-nav">
-
 
 **[Firesides](/firesides) 🔥** Fireside chats where community members share insights, lessons learned, and real-world experiences on FOSS, technology, and innovation.
 
