@@ -19,7 +19,10 @@ Visit: [https://hsp-ec.xyz/cfp-firesides](https://hsp-ec.xyz/cfp-firesides)
 <div id="proposals"">
   <script src="https://giscus.app/client.js" data-repo="homebrew-ec-foss/tiramisu" data-repo-id="R_kgDOMNKKDw"
       data-category="Firesides" data-category-id="DIC_kwDOMNKKD84Cl_Wo" data-mapping="pathname"
-      data-strict="0" data-reactions-enabled="0" data-emit-metadata="0" data-input-position="bottom"
+      data-strict="0"
+      data-reactions-enabled="0"
+      data-emit-metadata="0"
+      data-input-position="top"
       data-theme="dark" data-lang="en" crossorigin="anonymous" async>
   </script>
 </div>

@@ -27,7 +27,7 @@ Drop your proposals as comments for us to make note of and triage them!
         data-term="43"
         data-emit-metadata="0"
         data-reactions-enabled="0"
-        data-theme="preferred_color_scheme"
+        data-theme="dark"
         data-input-position="top"
         data-lang="en"
         data-loading="lazy"
