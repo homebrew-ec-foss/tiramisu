@@ -10,71 +10,40 @@ layout: post
 
 ![FOSS Talks Poster](https://imgur.com/0SDqj01.png)
 
-### We are back with the second edition of our flagship event - <span style="font-style:italic; color:#00fb6b">FOSS Talks</span>!
+### We are back with the second edition of our flagship event - FOSS Talks!
 
 This exciting on-campus meet up, the first of it's kind at PES University, is an initiative to expose the FOSS enthusiasts on campus to all the experienced open-source evangelists and contributors out there!
 
-<div id="proposals" style="margin: 4rem 0 2rem 0;">
-
-## Speaker Proposals
-
-Drop your proposals as comments for us to make note of and triage them!
-
-<script src="https://giscus.app/client.js"
-        data-repo="homebrew-ec-foss/tiramisu"
-        data-repo-id="R_kgDOMNKKDw"
-        data-mapping="number"
-        data-term="43"
-        data-emit-metadata="0"
-        data-reactions-enabled="0"
-        data-theme="dark"
-        data-input-position="top"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-</div>
-
-<br/>
-<br/>
-<br/>
-
 > Meet our open source visionaries! ⚡️🚀
 
-<div class="img-grid">
-<a href="https://vaibhawvipul.github.io/" style="display:flex; justify-content:center; ">
+## [Balakrisha Mukundaraj](https://www.linkedin.com/in/balakrishna-mukundaraj-97557622)
 
-## Vipul Vaibhaw
+Open-source compliance officer at Volvo Group, Exceptional Contributor at Open Compliance Summit Awards 2021.
 
-<br/>
+![Balakrisha Mukundaraj's Talk](https://via.placeholder.com/800x450?text=Balakrisha+Mukundaraj)
 
-<a href="https://www.linkedin.com/in/balakrishna-mukundaraj-97557622" style="display:flex; justify-content:center; ">
+> What is open source compliance? And why?
 
-## Balakrisha Mukundaraj
+## [Akash Hamirwasia](https://akashhamirwasia.com/)
 
-<br/>
+Frontend engineer at ElevenLabs, creator of Blaze and Slantit.
 
-<a href="https://akashhamirwasia.com/" style="display:flex; justify-content:center; ">
+> Journey of building open source projects!
 
-## Akash Hamirwasia
+## [Aditi Ahuja](https://www.linkedin.com/in/aditi-ahuja-334394193)
 
-<br/>
+SWE2 at Couchbase, and LFX Mentee 2021 for Thanos.
 
-<a href="https://www.linkedin.com/in/aditi-ahuja-334394193" style="display:flex; justify-content:center; ">
+> My experience working in the Search team maintaining Bleve.
 
-## Aditi Ahuja
+## [Aryan Mehrotra](https://www.linkedin.com/in/aryanmehrotra/)
 
-<br/>
+Works on gofr.dev and is an SDE2 at Zopsmart.
 
-<a href="https://www.linkedin.com/in/aryanmehrotra/" style="display:flex; justify-content:center; ">
+> Aryan will talk about the gofr ecosystem.
 
-## Aryan Mehrotra
+## [Kumar Shivendu](https://www.kshivendu.dev/)
 
-<br/>
+Core SWE at Quadrant Vector DB, GSoC 2021 at Software Heritage.
 
-<a href="https://www.kshivendu.dev/" style="display:flex; justify-content:center;">
-
-## Kumar Shivendu
-
-</div>
+> Chaos testing: Breaking Qdrant on purpose.
