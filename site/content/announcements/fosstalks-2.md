@@ -14,6 +14,8 @@ layout: post
 
 This exciting on-campus meet up, the first of it's kind at PES University, is an initiative to expose the FOSS enthusiasts on campus to all the experienced open-source evangelists and contributors out there!
 
+![](/static/images/gallery/fosstalks-2/group1.jpg)
+
 > Meet our open source visionaries! ⚡️🚀
 
 ## [Balakrisha Mukundaraj](https://www.linkedin.com/in/balakrishna-mukundaraj-97557622)
@@ -47,3 +49,4 @@ Works on gofr.dev and is an SDE2 at Zopsmart.
 Core SWE at Quadrant Vector DB, GSoC 2021 at Software Heritage.
 
 > Chaos testing: Breaking Qdrant on purpose.
+

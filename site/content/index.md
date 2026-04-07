@@ -37,7 +37,7 @@ To learn more about FOSS, check out <a href="https://homebrew.hsp-ec.xyz">Homebr
 
 **[Firesides](/firesides) 🔥** Fireside chats where community members share insights, lessons learned, and real-world experiences on FOSS, technology, and innovation.
 
-**[Workshops](/announcements)** — Hands-on sessions and technical talks covering everything from Git workflows to advanced FOSS concepts
+**[Workshops](/collections/announcements)** — Hands-on sessions and technical talks covering everything from Git workflows to advanced FOSS concepts
 
 **[FOSS Talks](/announcements/fosstalks-2)** — A curated series where speakers dive deep into open-source projects and 
 community-driven development.
