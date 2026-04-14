@@ -3,7 +3,7 @@ title: "HSP-26 Manifesto"
 date: "2026-05-01"
 tags: [manifesto, FOSS, tilde, HSP, tech]
 collections: [manifesto]
-description: "A retrospective on HSP 26's technical achievements and innovations in the FOSS ecosystem during 2025-26."
+description: "A retrospective on HSP 26's technical achievements and initiatives in the FOSS ecosystem during 2025-26."
 authors: ["Core"]
 layout: post
 draft: false
