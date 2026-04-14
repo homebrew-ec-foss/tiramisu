@@ -39,7 +39,7 @@ To learn more about FOSS, check out <a href="https://homebrew.hsp-ec.xyz">Homebr
 
 **[Workshops](/collections/announcements)** — Hands-on sessions and technical talks covering everything from Git workflows to advanced FOSS concepts
 
-**[FOSS Talks](/announcements/fosstalks-2)** — A curated series where speakers dive deep into open-source projects and 
+**[FOSS Talks](/announcements/fosstalks-3)** — A curated series where speakers dive deep into open-source projects and 
 community-driven development.
 
 **[Homebrew](https://homebrew.hsp-ec.xyz)** — Our FOSS Wing, where members contribute to open-source projects 

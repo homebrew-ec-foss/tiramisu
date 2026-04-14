@@ -22,6 +22,8 @@ This exciting on-campus meet up, the first of it's kind at PES University, is an
 
 Open-source compliance officer at Volvo Group, Exceptional Contributor at Open Compliance Summit Awards 2021.
 
+![](/static/images/gallery/fosstalks-2/1.jpg)
+
 ![Balakrisha Mukundaraj's Talk](https://via.placeholder.com/800x450?text=Balakrisha+Mukundaraj)
 
 > What is open source compliance? And why?
@@ -35,6 +37,8 @@ Frontend engineer at ElevenLabs, creator of Blaze and Slantit.
 ## [Aditi Ahuja](https://www.linkedin.com/in/aditi-ahuja-334394193)
 
 SWE2 at Couchbase, and LFX Mentee 2021 for Thanos.
+
+![](/static/images/gallery/fosstalks-2/2.jpg)
 
 > My experience working in the Search team maintaining Bleve.
 
