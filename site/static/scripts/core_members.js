@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (!item.Frontmatter || !item.Frontmatter.Collections) {
                     return false;
                 }
-                // Check if member is in core>2026 collection
-                return item.Frontmatter.Collections.includes("core>2026");
+                // Check if member is in core>2027 collection
+                return item.Frontmatter.Collections.includes("core>2027");
             });
 
             coreMembers.forEach((member) => {

@@ -1,8 +1,8 @@
 ---
 title: Arjun Gowda
-description: Member
-collections: ["members>2026"]
-tags: ["Mentee"]
+description: Core Team Lead '27
+collections: ["members>2026", "core_team", "core>2027"]
+tags: ["Mentee", "core"]
 previewimage: "/static/images/members/ArjunGowda.jpg"
 customFields:
     - Github: https://github.com/Gowda-Arjun

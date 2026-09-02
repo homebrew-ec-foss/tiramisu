@@ -1,8 +1,8 @@
 ---
 title: Navya S Gurupadmath
-description: Member
-collections: ["members>2025","members>2026"]
-tags: ["member"]
+description: Operations Lead '27 
+collections: ["members>2025","members>2026", "core_team", "core>2027"]
+tags: ["member", "core"]
 previewimage: /static/images/members/NavyaSGurupadmath.png
 customFields:
     - Github: https://github.com/Navya2022
