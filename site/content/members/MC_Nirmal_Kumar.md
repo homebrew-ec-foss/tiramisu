@@ -1,7 +1,7 @@
 ---
 title: M C Nirmal Kumar
 description: Member
-collections: ["members>2026"]
+collections: ["members>2027"]
 tags: ["member"]
 previewimage: /static/images/members/nirmal.jpg
 customFields:
